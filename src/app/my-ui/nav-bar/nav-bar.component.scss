@@ -1,4 +1,3 @@
-
 .icon {
     width: 70px;
     height: 70px;
@@ -11,12 +10,10 @@
 }
 
 .title {
-
     font-family: 'Lemonada', cursive;
     font-size: 50px;
     color: white;
 }
-
 
 .titleChange {
     font-family: 'Lemonada', cursive;
@@ -25,7 +22,8 @@
     transition: 0.5s;
 }
 
-.nav-bar{
+.nav-bar {
+    position: fixed;
     background-color: transparent;
     justify-content: space-between;
     width: 100%;
@@ -50,17 +48,4 @@
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
-}
-
-.nav-bar-change {
-    margin: 0 auto;
-    padding: 0 200px;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    transition: 1.5s;
-
 }
