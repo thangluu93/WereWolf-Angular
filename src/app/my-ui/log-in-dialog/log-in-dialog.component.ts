@@ -44,6 +44,6 @@ export class LogInDialogComponent implements OnInit {
     return this.retypePassword.hasError('required')?"You must retype your password":
       this.retypePassword.hasError('pattern')?'You must retype your password correctly':'';
 
-  }
+  }//csc
 
 }
