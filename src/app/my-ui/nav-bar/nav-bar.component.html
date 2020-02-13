@@ -1,1 +1,24 @@
-<p>nav-bar works!</p>
+<link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+<mat-toolbar class="nav-bar" id="container">
+    <mat-toolbar-row>
+        <img id="icon" src="../../../assets/WereWolfIcon.webp"> <span id="title">WEREWOLF</span>
+    </mat-toolbar-row>
+    <button>Constact</button>
+    <button mat-raised-button color="warn">Instruction</button>
+    <button>Account</button>
+    <audio src="../../../assets/" autoplay></audio>
+</mat-toolbar>
+
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    function myFunction() {
+        if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+            document.getElementById("container").className = "navbarChange";
+        } else {
+            document.getElementById("container").className = "nav-bar";
+        }
+    }
+</script>

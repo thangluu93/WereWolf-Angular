@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -21,8 +21,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatTabsModule,
     MatDialogModule,
     MatButtonModule,
+    MatToolbarModule,
 
   ],
-  exports: [NavBarComponent,LogInDialogComponent]
+  exports: [NavBarComponent,LogInDialogComponent,FooterComponent]
 })
 export class MyUiModule { }
