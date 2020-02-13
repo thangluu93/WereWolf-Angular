@@ -27,7 +27,7 @@ import { AngularFireStorageModule} from '@angular/fire/storage'
     AngularFireModule,
     AngularFirestoreModule,  //firestore
     AngularFireAuthModule,   //auth
-    AngularFireStorageModule,//Storage  
+    AngularFireStorageModule,//Storage    
     MyUiModule,
   ],
   providers: [],
