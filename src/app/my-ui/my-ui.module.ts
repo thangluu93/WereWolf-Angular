@@ -23,6 +23,6 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
 
   ],
-  exports: [NavBarComponent,LogInDialogComponent]
+  exports: [NavBarComponent,LogInDialogComponent,FooterComponent]
 })
 export class MyUiModule { }
