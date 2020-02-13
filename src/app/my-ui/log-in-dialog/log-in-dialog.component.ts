@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, Validators, FormControlName,FormGroupDirective } from '@angular/forms';
+import { Router } from '@angular/router';
+
+import {ErrorStateMatcher} from '@angular/material/core';
+
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -8,15 +12,18 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class LogInDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(public Router:Router) { }
 
   isLogin=true;
 
   ngOnInit(): void {
   }
 
+
+
   email=new FormControl('',[Validators.required,Validators.email]);
   password=new FormControl('',[Validators.required,Validators.minLength(8)]);
+  retypePassword=new FormControl('',[Validators.required,Validators.pattern(this.email.value)]);
 
   changTab(i){
     this.isLogin=i==0;
@@ -32,6 +39,11 @@ export class LogInDialogComponent implements OnInit {
       this.email.hasError('email')?"You must enter your email correctly":"";
   }
 
+  getRetypePasswordError(){
 
+    return this.retypePassword.hasError('required')?"You must retype your password":
+      this.retypePassword.hasError('pattern')?'You must retype your password correctly':'';
+
+  }
 
 }
