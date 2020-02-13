@@ -28,6 +28,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ReactiveFormsModule,
 
   ],
-  exports: [NavBarComponent,LogInDialogComponent]
+  exports: [NavBarComponent,LogInDialogComponent,FooterComponent]
 })
 export class MyUiModule { }
