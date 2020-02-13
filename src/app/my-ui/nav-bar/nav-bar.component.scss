@@ -1,27 +1,52 @@
-#icon {
-    width: 40px;
-    height: 40px;
+.icon {
+    width: 70px;
+    height: 70px;
 }
 
-#title {
+.iconChange {
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.title {
     font-family: 'Lemonada', cursive;
     font-size: 50px;
     color: white;
+}
+
+.titleChange {
+    font-family: 'Lemonada', cursive;
+    font-size: 30px;
+    color: white;
+    transition: 0.5s;
 }
 
 .nav-bar {
     position: fixed;
     background-color: transparent;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
 }
 
-.nav-bar-change {
+.navbarChange {
     margin: 0 auto;
-    padding: 0 200px;
     position: fixed;
     width: 100%;
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     background-color: black;
     transition: 1.5s;
+}
+
+#BackGround {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
