@@ -7,6 +7,8 @@ import { MatInputModule } from '@angular/material/input';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -21,6 +23,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatTabsModule,
     MatDialogModule,
     MatButtonModule,
+    MatFormFieldModule, 
+    FormsModule,
+    ReactiveFormsModule,
 
   ],
   exports: [NavBarComponent,LogInDialogComponent]
