@@ -8,6 +8,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -21,7 +23,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatTabsModule,
     MatDialogModule,
     MatButtonModule,
+
     MatToolbarModule,
+
+    MatFormFieldModule, 
+    FormsModule,
+    ReactiveFormsModule,r
 
   ],
   exports: [NavBarComponent,LogInDialogComponent,FooterComponent]
