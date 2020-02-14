@@ -1,22 +1,21 @@
-.example-small-box, .example-large-box {
+.example-small-box,
+.example-large-box {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 16px;
     padding: 16px;
     border-radius: 8px;
-  }
-  
+}
 
-  
-  .example-large-box {
+.example-large-box {
     height: 300px;
     width: 300px;
-  }
-  
-  .example-full-width{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  }
+}
+
+.example-full-width {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
