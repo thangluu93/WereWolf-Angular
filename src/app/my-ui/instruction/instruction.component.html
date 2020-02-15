@@ -1,0 +1,154 @@
+<mat-accordion>
+
+    <!-- Phe Thiện -->
+     <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Phe Thiện </mat-panel-title>
+          <mat-panel-description>
+            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>  Dân Làng (Villager) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Bạn là một dân làng bình thường và không có khả năng gì đặc biệt. <br>
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Xạ Thủ (Gunner) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Bạn có 2 viên đạn để xử tử kẻ khác.Vì tiếng súng rât lớn nên vai trò của bạn sẽ lộ ra sau phát súng đầu tiên. <br>
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Tiên Tri (Seer)  </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Mỗi đêm bạn có thể xem vai trò của người chơi khác.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Bảo Vệ (Bodyguard) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Chọn một người chơi để bảo vệ mỗi đêm. Người chơi không thể bị giết vào đêm đó, thay vào đó bạn sẽ bị tấn công thay người đó. Vì bạn rất khỏe nên sẽ không thể bị chết trong lần tấn công đầu tiên nhưng sẽ chết trong lần tấn công thứ hai.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Bác Sĩ (Doctor) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Chọn một người chơi để che chở vào mỗi đêm. Người chơi đó sẽ không bị giết vào đêm đó.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Lực Sĩ (Tough guy) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Mỗi đêm bạn có thể chọn 1 người để bảo vệ.Nếu bạn hoặc người chơi đó bị tấn công, cả 2 sẽ không chết và bạn sẽ thấy được vai trò của kẻ tấn công. Bởi vì vết thương của bạn, bạn sẽ chết vào cuối ngày tiếp theo.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Thiện Xạ (Marksman) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Vào ban đêm, bạn có thể đánh dấu một người chơi là mục tiêu của bạn. Sau ngày hôm sau, bạn có thể giết hoặc thay đổi mục tiêu của mình. Nếu bạn cố gắng giết một dân làng, phát bắn của bạn sẽ gây tác dụng ngược và giết chết bạn. Bạn có hai mũi tên.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Thầy Đồng (Medium) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Vào ban đêm bạn có thể nói chuyện ẩn danh với người chết. Bạn có 1 lần hồi sinh người khác.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Phù Thủy (Witch) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Bạn có 2 bình thuốc: Một bình dùng để giết và bình kia để bảo vệ người chơi. Bình bảo vệ chỉ được tiêu thụ nếu người chơi đó bị tấn công.Bạn không thể giết trong đêm đầu tiên.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Thần Tình Yêu (Cupid) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Trong đêm đầu tiên bạn có thể chọn hai người chơi đề họ làm tình nhân của nhau(Bạn có thể ghép đôi chính mình và một người chơi khác).Nếu một trong 2 người là sói 
+            ,cả hai sẽ trở thành phe thứ ba và sẽ thắng nếu cả 2 còn sống sót đến cuối cùng.Một trong hai chết thì cả hai cùng chết.     </p>
+        </mat-expansion-panel>
+    
+      </mat-expansion-panel>
+    
+    <!-- Phe Ác -->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Phe Ác </mat-panel-title>
+          <mat-panel-description>
+            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Ma Sói ( Werewolf) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Chọn một người để giết mỗi đêm.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Sói Đầu Đàn (Alphawerewolf) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Bạn là Ma Sói bình thường, ngoại trừ việc bạn có phiếu bầu gấp đôi trong đêm.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Sói Điên Cuồng (Werewolfberserk) </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Một lần trong trò chơi, bạn có thể thông báo rằng có một ma sói "điên cuồng" trong ngày. Nếu trong đêm nạn nhân đã chọn của bạn đang được bảo vệ, tất cả những người bảo vệ nạn nhân của bạn sẽ chết.
+          </p>
+        </mat-expansion-panel>
+    
+      </mat-expansion-panel>
+    
+    <!-- Phe Thứ 3 -->
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Phe Thứ 3 </mat-panel-title>
+          <mat-panel-description>
+            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+    
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Thằng Khờ </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Bạn phải lừa dân làng treo cổ bạn. Nếu họ treo cổ bạn, bạn thắng. <br>
+          </p>
+        </mat-expansion-panel>
+    
+      </mat-expansion-panel>
+    
+    
+    </mat-accordion>

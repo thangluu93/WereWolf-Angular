@@ -11,6 +11,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LogInDialogComponent } from './log-in-dialog/log-in-dialog.component';
 import { FooterComponent } from './footer/footer.component';
+import { InstructionComponent } from './instruction/instruction.component';
+
+import {MatCheckboxModule} from '@angular/material';
 
 
 
@@ -22,7 +25,7 @@ import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [NavBarComponent, LogInDialogComponent, FooterComponent],
+  declarations: [NavBarComponent, LogInDialogComponent, FooterComponent, InstructionComponent],
   imports: [
     CommonModule,
     MatFormFieldModule, 
@@ -36,7 +39,11 @@ import { FooterComponent } from './footer/footer.component';
     MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCheckboxModule,
 
+  ],
+  entryComponents:[
+    InstructionComponent
   ],
   exports: [NavBarComponent,LogInDialogComponent,FooterComponent]
 })

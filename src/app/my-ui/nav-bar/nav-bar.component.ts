@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { InstructionComponent } from '../instruction/instruction.component';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     window.onscroll = function() {
     myFunction();
 
@@ -25,6 +27,16 @@ function myFunction() {
     }
 } 
 
+}
+openDialog(): void {
+  const dialogRef = this.dialog.open(InstructionComponent, {
+    width:'1000px',
+    height:'500px',
+  });
+
+  dialogRef.afterClosed().subscribe(result => {
+    console.log('The dialog was closed');
+  });
 }
 
   ngOnInit(): void {
