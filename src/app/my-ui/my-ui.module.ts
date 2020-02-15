@@ -7,13 +7,12 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LogInDialogComponent } from './log-in-dialog/log-in-dialog.component';
 import { FooterComponent } from './footer/footer.component';
 import { InstructionComponent } from './instruction/instruction.component';
-
-import {MatCheckboxModule} from '@angular/material';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import  {MatExpansionModule} from '@angular/material/expansion'
 
 
 
@@ -30,7 +29,7 @@ import {MatCheckboxModule} from '@angular/material';
     CommonModule,
     MatFormFieldModule, 
     MatInputModule,
-
+    MatExpansionModule,
 
 
     MatTabsModule,
