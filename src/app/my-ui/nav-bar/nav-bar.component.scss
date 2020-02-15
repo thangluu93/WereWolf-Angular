@@ -30,6 +30,8 @@
     background-color: transparent;
     width: 100%;
     flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    transition: 1.5s;
 }
 
 .navbarChange {

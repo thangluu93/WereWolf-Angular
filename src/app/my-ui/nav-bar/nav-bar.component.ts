@@ -23,7 +23,7 @@ function myFunction() {
     } else {
         document.getElementById("container").className = "nav-bar mat-toolbar mat-toolbar-multiple-rows";
         document.getElementById("icon").className = "icon ";
-        document.getElementById("title").className = "title "; //fiox
+        document.getElementById("title").className = "title "; 
     }
 } 
 
