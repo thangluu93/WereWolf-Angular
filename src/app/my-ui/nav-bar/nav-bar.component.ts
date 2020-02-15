@@ -16,7 +16,7 @@ export class NavBarComponent implements OnInit {
 };
 
 function myFunction() {
-    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("container").className = "navbarChange mat-toolbar mat-toolbar-multiple-rows ";
         document.getElementById("icon").className = "iconChange ";
         document.getElementById("title").className = "titleChange ";
@@ -26,6 +26,7 @@ function myFunction() {
         document.getElementById("title").className = "title "; 
     }
 } 
+
 
 }
 openDialog(): void {
