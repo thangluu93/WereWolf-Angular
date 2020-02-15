@@ -1,5 +1,5 @@
 <h1>Hi </h1>
-<div>
+<div id="login">
     <mat-tab-group dynamicHeight>
         <mat-tab label="Log In">
 
@@ -7,14 +7,14 @@
             <mat-form-field class="example-full-width" required>
                 <mat-label>Email</mat-label>
 
-                 <input matInput placeholder="pat@example.com" [formControl]="email" >
-                 <mat-error *ngIf="email.invalid">{{getEmailError()}}</mat-error>
+                <input matInput placeholder="pat@example.com" [formControl]="email">
+                <mat-error *ngIf="email.invalid">{{getEmailError()}}</mat-error>
 
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
                 <mat-label>Password</mat-label>
-                <input matInput [formControl]="password" >
+                <input matInput [formControl]="password">
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}} </mat-error>
             </mat-form-field>
 
@@ -27,28 +27,28 @@
 
                 <mat-form-field class="example-full-width">
                     <mat-label>email</mat-label>
-                    <input matInput placeholder="pat@example.com" >
+                    <input matInput placeholder="pat@example.com">
                     <mat-error *ngIf="email.invalid">{{getEmailError()}} </mat-error>
                 </mat-form-field>
                 <mat-form-field class="example-full-width">
                     <mat-label>Password</mat-label>
-                    <input matInput [formControl]="password" >
+                    <input matInput [formControl]="password">
                     <mat-error *ngIf="password.invalid">{{getPasswordError()}} </mat-error>
                 </mat-form-field>
                 <br>
                 <mat-form-field class="example-full-width">
                     <mat-label>Retype your password</mat-label>
-                    <input matInput [formControl]="password" >
+                    <input matInput [formControl]="password">
                     <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}} </mat-error>
                 </mat-form-field>
 
-        
+
 
             </div>
         </mat-tab>
     </mat-tab-group>
- 
-</div> 
+
+</div>
 
 <!-- <div mat-dialog-actions>
     <button mat-button>No Thanks</button>

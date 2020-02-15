@@ -7,7 +7,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LogInDialogComponent } from './log-in-dialog/log-in-dialog.component';
 import { FooterComponent } from './footer/footer.component';
