@@ -1,3 +1,4 @@
+import { MyUiModule } from './my-ui.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
@@ -13,7 +14,8 @@ import { LogInDialogComponent } from './log-in-dialog/log-in-dialog.component';
 import { FooterComponent } from './footer/footer.component';
 import { InstructionComponent } from './instruction/instruction.component';
 
-import {MatCheckboxModule} from '@angular/material';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatExpansionModule } from '@angular/material/expansion'
 
 
 
@@ -30,9 +32,6 @@ import {MatCheckboxModule} from '@angular/material';
     CommonModule,
     MatFormFieldModule, 
     MatInputModule,
-
-
-
     MatTabsModule,
     MatDialogModule,
     MatButtonModule,
@@ -40,11 +39,12 @@ import {MatCheckboxModule} from '@angular/material';
     FormsModule,
     ReactiveFormsModule,
     MatCheckboxModule,
+    MatExpansionModule,
 
   ],
   entryComponents:[
     InstructionComponent
   ],
-  exports: [NavBarComponent,LogInDialogComponent,FooterComponent]
+  exports: [NavBarComponent,LogInDialogComponent,FooterComponent],
 })
 export class MyUiModule { }
