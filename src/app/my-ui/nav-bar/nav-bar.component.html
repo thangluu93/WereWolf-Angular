@@ -4,14 +4,13 @@
     <mat-toolbar-row>
         <a href="#title"><img class="icon" id="icon" src="../../../assets/WereWolfIcon.webp"></a>
         <span id="title" class="title">WEREWOLF</span>
-
         <span class="spacer"></span>
 
-
-        <a mat-button color="warn" id="contact" href="#footer">Contact</a>
-        <button mat-button color="warn" id="instruction">Instruction</button>
-        <a button mat-button color="warn" id="account" href="#login">Account</a>
-        <button mat-fab color="warn" id="avatar">Avatar</button>
+        <button class="ConstactButton" mat-button> <a href="/#footer"> Constact</a></button>
+        <button class="InstructionButton" mat-button (click)="openDialog()">Instruction</button>
+        <button class="AccountButton" mat-raised-button> <a href="/#login"> ACCOUNT</a></button>
+        <button class="AvatarButton" mat-button> <button class="Inside" mat-button > Avatar </button> </button>
 
     </mat-toolbar-row>
 </mat-toolbar>
+<!-- delete script -->
