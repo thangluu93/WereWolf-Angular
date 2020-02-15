@@ -28,12 +28,8 @@
 .nav-bar{
     position: fixed;
     background-color: transparent;
-    justify-content: space-between;
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
     flex-direction: row-reverse;
-    -webkit-box-pack: justify;
 }
 
 .navbarChange {
@@ -51,7 +47,6 @@
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .nav-bar-change {
@@ -64,4 +59,62 @@
     background-color: black;
     transition: 1.5s;
 
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+button{
+    font-size: 15px;
+    font-weight: 800;
+    color: whitesmoke;
+    height: 50px;
+    font-family: 'Open Sans',sans-serif;
+    flex: auto;
+
+}
+.AccountButton{
+    background-color: red;
+}
+.AccountButton:hover{
+    background: repeating-linear-gradient( to right , rgba(255, 174, 0, 0.788),rgb(255, 208, 0));
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Open Sans',sans-serif;
+}
+.InstructionButton:hover{
+    color: red;
+}
+.ConstactButton:hover{
+    color: red;
+
+}
+.AvatarButton{
+    background-color: lime;
+    width: 60px;
+    height: 50px;
+}
+.AvatarButton:hover{
+    background: repeating-linear-gradient( to right , rgba(122, 201, 238, 0.877), rgba(112, 222, 230, 0.863));
+    color: white;
+}
+.Inside{
+    width: 140px;
+    height: 40px;
+    margin: auto;
+}
+.Inside:hover{
+    background-color: rgb(233, 196, 51);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+a:hover{
+    color:white;
 }
