@@ -1,14 +1,7 @@
 <mat-accordion>
 
     <!-- Phe Thiện -->
-     <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title> Phe Thiện </mat-panel-title>
-          <mat-panel-description>
-            Currently I am {{panelOpenState ? 'open' : 'closed'}}
-          </mat-panel-description>
-        </mat-expansion-panel-header>
+
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>  Dân Làng (Villager) </mat-panel-title>
@@ -90,17 +83,9 @@
             ,cả hai sẽ trở thành phe thứ ba và sẽ thắng nếu cả 2 còn sống sót đến cuối cùng.Một trong hai chết thì cả hai cùng chết.     </p>
         </mat-expansion-panel>
     
-      </mat-expansion-panel>
     
     <!-- Phe Ác -->
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title> Phe Ác </mat-panel-title>
-          <mat-panel-description>
-            Currently I am {{panelOpenState ? 'open' : 'closed'}}
-          </mat-panel-description>
-        </mat-expansion-panel-header>
+
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title> Ma Sói ( Werewolf) </mat-panel-title>
@@ -126,29 +111,19 @@
           </p>
         </mat-expansion-panel>
     
-      </mat-expansion-panel>
-    
+
     <!-- Phe Thứ 3 -->
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                          (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title> Phe Thứ 3 </mat-panel-title>
-          <mat-panel-description>
-            Currently I am {{panelOpenState ? 'open' : 'closed'}}
-          </mat-panel-description>
-        </mat-expansion-panel-header>
     
     
         <mat-expansion-panel>
           <mat-expansion-panel-header>
-            <mat-panel-title> Thằng Khờ </mat-panel-title>
+            <mat-panel-title> Thằng Khờ (Fool) </mat-panel-title>
           </mat-expansion-panel-header>
           <p>
             Bạn phải lừa dân làng treo cổ bạn. Nếu họ treo cổ bạn, bạn thắng. <br>
           </p>
         </mat-expansion-panel>
     
-      </mat-expansion-panel>
     
     
     </mat-accordion>

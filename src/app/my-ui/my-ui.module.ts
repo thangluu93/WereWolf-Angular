@@ -13,9 +13,9 @@ import { LogInDialogComponent } from './log-in-dialog/log-in-dialog.component';
 import { FooterComponent } from './footer/footer.component';
 import { InstructionComponent } from './instruction/instruction.component';
 
-import {MatCheckboxModule} from '@angular/material';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
-
+import {MatExpansionModule} from '@angular/material/expansion'
 
 
 
@@ -31,7 +31,7 @@ import {MatCheckboxModule} from '@angular/material';
     MatFormFieldModule, 
     MatInputModule,
 
-
+    MatExpansionModule,
 
     MatTabsModule,
     MatDialogModule,
