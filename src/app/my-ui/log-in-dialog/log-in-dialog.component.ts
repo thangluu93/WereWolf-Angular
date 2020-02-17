@@ -30,8 +30,10 @@ export class LogInDialogComponent implements OnInit {
   }
 
   getPasswordError(){
+  
     return this.password.hasError('required')?"You must enter your password":
       this.password.hasError('minLength')?"Your password must have at least 8 character":'';
+      
   }
 
   getEmailError(){
