@@ -1,5 +1,5 @@
-<h1>Hi </h1>
-<div id="login">
+<h1 id="login">Hi </h1>
+<div>
     <mat-tab-group dynamicHeight>
         <mat-tab label="Log In">
 
@@ -16,7 +16,6 @@
                 <input matInput [formControl]="password">
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}} </mat-error>
             </mat-form-field>
-
 
 
         </mat-tab>
@@ -39,6 +38,7 @@
                     <mat-label>Retype your password</mat-label>
                     <input matInput [formControl]="password">
                     <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}} </mat-error>
+
                 </mat-form-field>
 
 
@@ -46,10 +46,11 @@
             </div>
         </mat-tab>
     </mat-tab-group>
+    <button mat-raised-button (click)="Router.navigate(['game-play'])"> as guest</button>
 
-</div>
 
-<!-- <div mat-dialog-actions>
+
+    <!-- <div mat-dialog-actions>
     <button mat-button>No Thanks</button>
-    <button mat-button cdkFocusInitial>Ok</button>
-</div>  -->
+            <button mat-button cdkFocusInitial>Ok</button>
+</div> -->

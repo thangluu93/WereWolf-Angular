@@ -14,7 +14,7 @@ export class NavBarComponent implements OnInit {
     myFunction();
 
 };
-
+//function for NavBar
 function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("container").className = "navbarChange mat-toolbar mat-toolbar-multiple-rows ";
@@ -26,7 +26,7 @@ function myFunction() {
         document.getElementById("title").className = "title "; 
     }
 } 
-
+//end of function for NavBar
 
 }
 openDialog(): void {
@@ -39,6 +39,8 @@ openDialog(): void {
     console.log('The dialog was closed');
   });
 }
+
+
 
   ngOnInit(): void {
   }
