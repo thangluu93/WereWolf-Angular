@@ -1,56 +1,32 @@
-<mat-drawer-container class="example-container" style="background-color: black;">
-    <mat-drawer mode="side" opened>
-        <div id="lobbyRightBar" style="width:100%;height:calc(100%);">
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened style="background-color: blanchedalmond;width: 20%;">
 
-            <div id="lobbyChatTitleContainer" style="background-color:#303030; border-top:2px solid black; border-bottom:2px solid black">
-                <h2 class="ui header" style="color:#cecece; padding-left:5px; padding-top:5px;">Chat</h2>
-            </div>
-            <div>
-                <div id="lobbyChatListContainer" style="height:calc(55% - 95px);overflow:auto;border-bottom:2px solid black;border-radius:none;" data-simplebar="init">
-                    <div class="simplebar-track vertical" style="visibility: visible;">
-                        <div class="simplebar-scrollbar" style="height: 25px; transform: translate3d(0px, 0px, 0px);"></div>
-                    </div>
-                    <div class="simplebar-track horizontal" style="visibility: hidden;">
-                        <div class="simplebar-scrollbar"></div>
-                    </div>
-                    <div class="simplebar-scroll-content" style="padding-right: 10px; margin-bottom: -20px;">
-                        <div class="simplebar-content" style="padding-bottom: 10px; margin-right: -10px;">
-                            <ul id="lobbyChatList" style="justfy-self:start;">
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : hey come everyone</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : balckfish and vanpeter come in</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : Please?</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : hello?</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : :(</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : anyone?!?</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : this is sad :(</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">eryxc : helloooooooo</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">meniscus : hi all</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">demin : Let’s play onuw</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">indomat : hi</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">aeasea : HELLO</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">jc : hey cedrick!</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">aeasea : sup</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">cedrick : its me</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">paricio : HELLO</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">yeleb : gago</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">yeleb : tanga</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">yellow : bading</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">sephjo : oy beke nemen</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">asdfawsdf : oy laro</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">alo : alo</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">alo : ã</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">alo : cdc</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">l : ewdww</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">l : hello</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">mcsm : mudafaker</span></li>
-                                <li class="gameli"><span style="color: rgb(206, 206, 206);">a : mm</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <form id="lobbyChatForm " action=""><input class="lobbyChatInput " autocomplete="off " maxlength="280 " placeholder="Type here " style="display: flex; "></form>
+        <div class="chatboxtitle">
+            <h1 style="text-align: center; margin-top: 10px;">
+                CHAT BOX
+            </h1>
         </div>
+
+        <div class="messcontent">
+
+            <P>
+                mess user text here!!
+            </P>
+
+        </div>
+
+        <form id="lobbyChatForm" action=""><input id="lobbyChatInput" autocomplete="off" maxlength="280" placeholder="Type here" style="color:red; width:200px; border:2px solid black; padding-left:5px; background-color:inherit; margin-left:auto; margin-right:auto; display:block;margin-top:10px;height:30px;outline:none;">
+
+        </form>
+
+
+
     </mat-drawer>
-    <mat-drawer-content>Main content</mat-drawer-content>
+
+    <mat-drawer-content>
+
+        Main content
+
+    </mat-drawer-content>
+
 </mat-drawer-container>

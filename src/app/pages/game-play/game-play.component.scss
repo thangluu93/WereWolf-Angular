@@ -9,93 +9,24 @@
         height: 100%;
     }
     
-    element.style {
-        width: 35%;
-        height: calc(100%);
-    }
-    
-    #lobbyRightBar {
-        width: 35%;
+    .chatboxtitle {
+        border: 1px solid #555;
         border-left: 2px solid #020202;
         border-right: 2px solid #020202;
         border-bottom: 2px solid #020202;
-        z-index: 1;
+        border-top: 2px solid #020202;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 2px;
     }
     
-    * {
-        margin: 0;
-        padding: 0px 0px;
-        font-family: "IBM Plex Sans", sans-serif;
-        line-height: normal;
-    }
-    
-    .lobbyChatInput {
-        color: black;
-        width: 200px;
-        border: 2px solid black;
-        padding-left: 5px;
-        background-color: wheat;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-top: 15px;
-        height: 30px;
-        outline: none;
-    }
-    
-    button,
-    input {
-        overflow: visible;
-    }
-    
-    element.style {
-        width: 35%;
-        height: calc(100%);
-    }
-    
-    #lobbyRightBar {
-        width: 35%;
+    .messcontent {
+        width: 90%;
+        height: 80%;
         border-left: 2px solid #020202;
         border-right: 2px solid #020202;
         border-bottom: 2px solid #020202;
-    }
-    
-    #lobby {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: stretch;
-        flex-direction: row;
-    }
-    
-    #lobby {
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-    }
-    
-    user agent stylesheet div {
-        display: block;
-    }
-    
-    #lobbyChatListContainer {
-        background-color: #303030;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-    }
-    
-    .simplebar-track.vertical {
-        display: none;
-    }
-    
-    #body ::-webkit-scrollbar {
-        -webkit-appearance: none;
-        width: 10px;
-        height: 10px;
-    }
-    
-    .simplebar-scrollbar {
-        -webkit-appearance: none;
-        width: 10px;
-        height: 10px;
+        border-top: 2px solid #020202;
+        margin-left: 10px;
     }
