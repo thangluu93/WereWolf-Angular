@@ -1,56 +1,60 @@
-<h1 id="login">Hi </h1>
-<div>
-    <mat-tab-group dynamicHeight>
-        <mat-tab label="Log In">
+<mat-tab-group mat-align-tabs="center">
+    <!-- Log In -->
 
-
-            <mat-form-field class="example-full-width" required>
-                <mat-label>Email</mat-label>
-
-                <input matInput placeholder="pat@example.com" [formControl]="email">
-                <mat-error *ngIf="email.invalid">{{getEmailError()}}</mat-error>
-            </mat-form-field>
-
+    <mat-tab label="Log In" id="login">
+        <form class="example-form">
+            <!-- Input Email -->
             <mat-form-field class="example-full-width">
-                <mat-label>Password</mat-label>
-                <input matInput [formControl]="password">
-                <mat-error *ngIf="password.invalid">{{getPasswordError()}} </mat-error>
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
             </mat-form-field>
-
-
-        </mat-tab>
-
-        <mat-tab label="Sign Up">
-            <div class="example-large-box mat-elevation-z4">
-
-                <mat-form-field class="example-full-width">
-                    <mat-label>email</mat-label>
-                    <input matInput placeholder="pat@example.com">
-                    <mat-error *ngIf="email.invalid">{{getEmailError()}} </mat-error>
-                </mat-form-field>
-                <mat-form-field class="example-full-width">
-                    <mat-label>Password</mat-label>
-                    <input matInput [formControl]="password">
-                    <mat-error *ngIf="password.invalid">{{getPasswordError()}} </mat-error>
-                </mat-form-field>
-                <br>
-                <mat-form-field class="example-full-width">
-                    <mat-label>Retype your password</mat-label>
-                    <input matInput [formControl]="password">
-                    <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}} </mat-error>
-
-                </mat-form-field>
-
-
-
+            <!-- Inpput Password -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your password</mat-label>
+                <input matInput placeholder="password" [formControl]="password" required type='password'>
+                <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
+            </mat-form-field>
+            <!-- Input Retype Password -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your password again</mat-label>
+                <input matInput placeholder="retype password" [formControl]="retypePassword" required type='password'>
+                <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}}</mat-error>
+            </mat-form-field>
+            <!-- Log In Button -->
+            <div class="example-button-row">
+                <button mat-raised-button color="primary">Log In</button>
             </div>
-        </mat-tab>
-    </mat-tab-group>
+        </form>
+    </mat-tab>
+
+    <!-- Sign Up -->
+
+    <mat-tab label="Sign Up">
+        <form class="example-form">
+            <!-- Input Email -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <!-- Inpput Password -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your password</mat-label>
+                <input matInput placeholder="password" [formControl]="password" required type='password'>
+                <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
+            </mat-form-field>
+            <!-- Input Retype Password -->
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your password again</mat-label>
+                <input matInput placeholder="retype password" [formControl]="retypePassword" required type='password'>
+                <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}}</mat-error>
+            </mat-form-field>
+            <!--Sign Up Button -->
+            <div class="example-button-row">
+                <button mat-raised-button color="primary" *ngIf="isSignUp" (click)="signUp()">Sign Up</button>
+            </div>
+        </form>
+    </mat-tab>
     <button mat-raised-button (click)="Router.navigate(['game-play'])"> as guest</button>
-
-
-
-    <!-- <div mat-dialog-actions>
-    <button mat-button>No Thanks</button>
-            <button mat-button cdkFocusInitial>Ok</button>
-</div> -->
+</mat-tab-group>

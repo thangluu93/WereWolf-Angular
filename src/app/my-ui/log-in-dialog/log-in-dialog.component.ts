@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators, FormControlName,FormGroupDirective } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
-
-import {ErrorStateMatcher} from '@angular/material/core';
-
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -12,38 +10,41 @@ import {ErrorStateMatcher} from '@angular/material/core';
 })
 export class LogInDialogComponent implements OnInit {
 
-  constructor(public Router:Router) { }
+  constructor(public snackBar: MatSnackBar, public Router: Router) { }
 
-  isLogin=true;
+  isSignUp = true;
+
+  email = new FormControl('', [Validators.required, Validators.email]);
+  password = new FormControl('', [Validators.required, Validators.minLength(8)]);
+  retypePassword = new FormControl('', [Validators.required, Validators.pattern(this.password.value)]);
 
   ngOnInit(): void {
   }
 
 
-
-  email=new FormControl('',[Validators.required,Validators.email]);
-  password=new FormControl('',[Validators.required,Validators.minLength(8)]);
-  retypePassword=new FormControl('',[Validators.required,Validators.pattern(this.email.value)]);
-
-  changTab(i){
-    this.isLogin=i==0;
+  getErrorMessage() {
+    return this.email.hasError('required') ? 'You must enter a value' :
+        this.email.hasError('email') ? 'Not a valid email' :
+            '';
   }
 
-  getPasswordError(){
-    return this.password.hasError('required')?"You must enter your password":
-      this.password.hasError('minLength')?"Your password must have at least 8 character":'';
+  getPasswordError() {
+    return this.password.hasError('required') ? 'You must enter a password' :
+        this.password.hasError('minLength') ? 'You password must have 8 characters' :
+          '';
   }
 
-  getEmailError(){
-    return this.email.hasError('required')?"You must enter your email":
-      this.email.hasError('email')?"You must enter your email correctly":"";
+  getRetypePasswordError() {
+    return this.retypePassword.hasError('required') ? 'You must enter a password' :
+        this.retypePassword.hasError('pattern') ? 'You must retype exactly' :
+          '';
   }
 
-  getRetypePasswordError(){
-
-    return this.retypePassword.hasError('required')?"You must retype your password":
-      this.retypePassword.hasError('pattern')?'You must retype your password correctly':'';
-
+  signUp() {
+    if (this.password.value !== this.retypePassword.value) {
+      this.snackBar.open('Retyped password does not match!!', 'OK', {duration: 2000});
+      return;
+    }
   }
-
 }
+

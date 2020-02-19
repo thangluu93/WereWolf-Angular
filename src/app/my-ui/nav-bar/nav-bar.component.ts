@@ -8,10 +8,15 @@ import { InstructionComponent } from '../instruction/instruction.component';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
+  }
+  
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog,) {
     window.onscroll = function() {
     myFunction();
+  };
 
 };
 //function for NavBar
@@ -28,21 +33,18 @@ function myFunction() {
 } 
 //end of function for NavBar
 
-}
-openDialog(): void {
-  const dialogRef = this.dialog.open(InstructionComponent, {
-    width:'1000px',
-    height:'500px',
-  });
-
-  dialogRef.afterClosed().subscribe(result => {
-    console.log('The dialog was closed');
-  });
-}
 
 
+  openDialog() {
+    const dialogRef = this.dialog.open(InstructionComponent, {
+      width:'1000px',
+      height:'500px',
+    });
 
-  ngOnInit(): void {
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 
-}
+  ngOnInit():void {
+  }
