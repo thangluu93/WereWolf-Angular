@@ -12,15 +12,13 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LogInDialogComponent } from './log-in-dialog/log-in-dialog.component';
 import { FooterComponent } from './footer/footer.component';
 import { InstructionComponent } from './instruction/instruction.component';
+
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import  {MatExpansionModule} from '@angular/material/expansion'
 
+import {MatExpansionModule} from '@angular/material/expansion'
 
-
-
-
-
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -41,6 +39,8 @@ import  {MatExpansionModule} from '@angular/material/expansion'
     ReactiveFormsModule,
     MatCheckboxModule,
     MatExpansionModule,
+    MatIconModule,
+    MatSnackBarModule,
 
   ],
   entryComponents:[
