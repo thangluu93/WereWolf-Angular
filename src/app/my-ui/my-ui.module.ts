@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
@@ -7,7 +8,6 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LogInDialogComponent } from './log-in-dialog/log-in-dialog.component';
 import { FooterComponent } from './footer/footer.component';
@@ -17,10 +17,11 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import {MatExpansionModule} from '@angular/material/expansion'
 
-
-
-
-
+import { MatIconModule } from '@angular/material/icon';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule} from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -30,8 +31,8 @@ import {MatExpansionModule} from '@angular/material/expansion'
     CommonModule,
     MatFormFieldModule, 
     MatInputModule,
-
     MatExpansionModule,
+
 
     MatTabsModule,
     MatDialogModule,
@@ -40,11 +41,17 @@ import {MatExpansionModule} from '@angular/material/expansion'
     FormsModule,
     ReactiveFormsModule,
     MatCheckboxModule,
+    MatExpansionModule,
+    MatIconModule,
+    AngularFireModule,
+    AngularFireAuthModule,
+    MatSnackBarModule,
+    AngularFireModule.initializeApp(environment.firebase),
 
   ],
   entryComponents:[
     InstructionComponent
   ],
-  exports: [NavBarComponent,LogInDialogComponent,FooterComponent]
+  exports: [NavBarComponent,LogInDialogComponent,FooterComponent],
 })
 export class MyUiModule { }
