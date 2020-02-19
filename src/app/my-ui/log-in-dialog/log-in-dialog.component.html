@@ -24,7 +24,6 @@
                                     <!-- Log In Button -->
             <div class="example-button-row">
                 <button mat-raised-button color="primary"  >Log In</button>
-                <button >Login</button>
             </div>
         </form>
     </mat-tab>
@@ -53,7 +52,7 @@
             </mat-form-field>
                                     <!--Sign Up Button -->
             <div class="example-button-row">
-                <button mat-raised-button color="primary" >Sign Up</button>
+                <button mat-raised-button color="primary" *ngIf="isSignUp" (click)="signUp()">Sign Up</button>
             </div>
         </form>
     </mat-tab>

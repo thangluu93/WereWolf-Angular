@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-// import { auth } from 'firebase';
-import { AngularFireAuth } from '@angular/fire/auth';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -12,9 +9,9 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class LogInDialogComponent implements OnInit {
 
-  isSignUp = true;
+  constructor(public snackBar: MatSnackBar) { }
 
-  constructor(public diaRef: MatDialogRef<LogInDialogComponent>,public afAuth: AngularFireAuth, public snackBar: MatSnackBar) { }
+  isSignUp = true;
 
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required, Validators.minLength(8)]);
@@ -23,9 +20,6 @@ export class LogInDialogComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeTab(i) {
-    this.isSignUp = (i === 0);
-  }
 
   getErrorMessage() {
     return this.email.hasError('required') ? 'You must enter a value' :
@@ -43,6 +37,13 @@ export class LogInDialogComponent implements OnInit {
     return this.retypePassword.hasError('required') ? 'You must enter a password' :
         this.retypePassword.hasError('pattern') ? 'You must retype exactly' :
           '';
+  }
+
+  signUp() {
+    if (this.password.value !== this.retypePassword.value) {
+      this.snackBar.open('Retyped password does not match!!', 'OK', {duration: 2000});
+      return;
+    }
   }
 }
 

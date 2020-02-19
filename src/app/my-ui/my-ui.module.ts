@@ -18,6 +18,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatExpansionModule} from '@angular/material/expansion'
 
 import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -39,6 +40,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCheckboxModule,
     MatExpansionModule,
     MatIconModule,
+    MatSnackBarModule,
 
   ],
   entryComponents:[
