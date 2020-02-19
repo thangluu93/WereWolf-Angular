@@ -44,39 +44,5 @@ export class LogInDialogComponent implements OnInit {
         this.retypePassword.hasError('pattern') ? 'You must retype exactly' :
           '';
   }
-
-  login() {
-    this.afAuth.auth.signInWithEmailAndPassword(this.email.value, this.password.value).then(() => {
-      this.snackBar.open('Got ya!', 'OK', {duration: 2000});
-      this.diaRef.close();
-    }).catch((err) => {
-      this.snackBar.open(err, 'OK', {duration: 2000});
-    });
-  }
-
-  signUp() {
-    if (this.password.value !== this.retypePassword.value) {
-      this.snackBar.open('Retyped password does not match!!', 'OK', {duration: 2000});
-      return;
-    }
-    this.afAuth.auth.createUserWithEmailAndPassword(this.email.value, this.password.value).then(() => {
-      this.snackBar.open('Got ya!', 'OK', {duration: 2000});
-      this.email.reset();
-      this.password.reset();
-      this.retypePassword.reset();
-    }).catch((err) => {
-      this.snackBar.open(err, 'OK', {duration: 2000});
-    });
-  }
-
-  // loginWithGG() {
-  //   const provider = new auth.GoogleAuthProvider();
-  //   this.afAuth.auth.signInWithPopup(provider).then(() => {
-  //     this.snackBar.open('Got ya!', 'OK', {duration: 2000});
-  //     this.diaRef.close();
-  //   }).catch((err) => {
-  //     this.snackBar.open(err, 'OK', {duration: 2000});
-  //   });
-  // }
 }
 

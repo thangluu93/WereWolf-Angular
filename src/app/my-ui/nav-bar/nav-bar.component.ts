@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { InstructionComponent } from '../instruction/instruction.component';
-import { AngularFireAuth } from '@angular/fire/auth';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-nav-bar',
@@ -11,7 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(public dialog: MatDialog, public snackBar: MatSnackBar, public afAuth: AngularFireAuth) {
+  constructor(public dialog: MatDialog) {
     window.onscroll = function() {
     myFunction();
   };
@@ -28,7 +26,6 @@ export class NavBarComponent implements OnInit {
     }
   } 
 }
-avt = '';
 
   openDialog(): void {
     const dialogRef = this.dialog.open(InstructionComponent, {
@@ -41,19 +38,6 @@ avt = '';
     });
   }
 
-  ngOnInit() {
-    this.afAuth.user.subscribe((usr) => {
-      if (!usr.emailVerified) {
-        usr.sendEmailVerification().then(() => {
-          this.afAuth.auth.signOut();
-          this.snackBar.open('Please check your email to verify your account', 'OK', {duration: 5000});
-        }).catch((err) => {
-          this.snackBar.open(err, 'OK', {duration: 5000});
-        });
-
-      }
-      this.avt = usr.photoURL;
-
-    });
+  ngOnInit():void {
   }
 }

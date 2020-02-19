@@ -18,10 +18,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatExpansionModule} from '@angular/material/expansion'
 
 import { MatIconModule } from '@angular/material/icon';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule} from '@angular/fire/auth';
-import { environment } from 'src/environments/environment';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -43,10 +39,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatCheckboxModule,
     MatExpansionModule,
     MatIconModule,
-    AngularFireModule,
-    AngularFireAuthModule,
-    MatSnackBarModule,
-    AngularFireModule.initializeApp(environment.firebase),
 
   ],
   entryComponents:[
