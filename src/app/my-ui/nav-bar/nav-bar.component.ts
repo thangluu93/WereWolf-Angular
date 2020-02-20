@@ -8,16 +8,13 @@ import { InstructionComponent } from '../instruction/instruction.component';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  
-  
 
-  constructor(public dialog: MatDialog,) {
+  constructor(public dialog: MatDialog) {
     window.onscroll = function() {
-    
+    myFunction();
   };
-  };
-//function for NavBar
-function myFunction() {
+
+  function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("container").className = "navbarChange mat-toolbar mat-toolbar-multiple-rows ";
         document.getElementById("icon").className = "iconChange ";
@@ -27,12 +24,10 @@ function myFunction() {
         document.getElementById("icon").className = "icon ";
         document.getElementById("title").className = "title "; 
     }
+  } 
 }
-//end of function for NavBar
 
-
-
-  openDialog() {
+  openDialog(): void {
     const dialogRef = this.dialog.open(InstructionComponent, {
       width:'1000px',
       height:'500px',
