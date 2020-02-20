@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -9,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class LogInDialogComponent implements OnInit {
 
-  constructor(public snackBar: MatSnackBar) { }
+  constructor(public snackBar: MatSnackBar, public Router: Router) { }
 
   isSignUp = true;
 
