@@ -8,17 +8,14 @@ import { InstructionComponent } from '../instruction/instruction.component';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
-  }
+  
   
 
   constructor(public dialog: MatDialog,) {
     window.onscroll = function() {
-    myFunction();
+    
   };
-
-};
+  };
 //function for NavBar
 function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -30,7 +27,7 @@ function myFunction() {
         document.getElementById("icon").className = "icon ";
         document.getElementById("title").className = "title "; 
     }
-} 
+}
 //end of function for NavBar
 
 
@@ -48,3 +45,4 @@ function myFunction() {
 
   ngOnInit():void {
   }
+}
