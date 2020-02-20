@@ -5,12 +5,10 @@ import { UserDataService } from './user-data.service';
 describe('UserDataService', () => {
   let service: UserDataService;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(UserDataService);
-  });
+  beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
+    const service: UserDataService = TestBed.get(UserDataService);
     expect(service).toBeTruthy();
   });
 });
