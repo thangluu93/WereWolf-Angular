@@ -1,7 +1,7 @@
-
 .icon {
     width: 70px;
     height: 70px;
+    transition: 0.5s;
 }
 
 .iconChange {
@@ -11,12 +11,11 @@
 }
 
 .title {
-
     font-family: 'Lemonada', cursive;
     font-size: 50px;
     color: white;
+    transition: 0.5s;
 }
-
 
 .titleChange {
     font-family: 'Lemonada', cursive;
@@ -25,13 +24,12 @@
     transition: 0.5s;
 }
 
-
-    justify-content: space-between;
+.nav-bar {
+    position: fixed;
+    background-color: transparent;
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    flex-direction: row-reverse;
-    -webkit-box-pack: justify;
+    transition: 1.5s;
+    scroll-behavior: smooth;
 }
 
 .navbarChange {
@@ -42,24 +40,163 @@
     justify-content: space-between;
     background-color: black;
     transition: 1.5s;
+    scroll-behavior: smooth;
+    z-index: 2;
 }
 
-#BackGround {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-=======
+#instruction {
+    width: 150px;
+    height: 41px;
+    margin-top: 9px;
+    text-align: center;
+    background-color: transparent;
 }
 
-.nav-bar-change {
-    margin: 0 auto;
-    padding: 0 200px;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    transition: 1.5s;
+#contact {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    color: white;
+    transition: 0.5s;
+    #contact:hover {
+        color: red;
+        scroll-behavior: smooth;
+    }
+    #account {
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+    #account:hover {
+        color: red;
+        transition: 1.5s;
+    }
+    #avatar {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 5px;
+    }
+    #avatar:hover {
+        color: red;
+    }
+}
 
+.spacer {
+    flex: 1 1 auto;
+}
+
+button {
+    font-size: 15px;
+    font-weight: 800;
+    color: whitesmoke;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    flex: auto;
+}
+
+.AccountButton {
+    background-color: red;
+    scroll-behavior: smooth;
+}
+
+.AccountButton:hover {
+    background: repeating-linear-gradient( to right, rgba(255, 174, 0, 0.788), rgb(255, 208, 0));
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.InstructionButton:hover {
+    color: red;
+}
+
+.ConstactButton:hover {
+    color: red;
+}
+
+.AvatarButton {
+    background-color: lime;
+    width: 60px;
+    height: 50px;
+}
+
+.AvatarButton:hover {
+    background: repeating-linear-gradient( to right, rgba(122, 201, 238, 0.877), rgba(112, 222, 230, 0.863));
+    color: white;
+}
+
+.Inside {
+    width: 140px;
+    height: 40px;
+    margin: auto;
+}
+
+.Inside:hover {
+    background-color: rgb(233, 196, 51);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+#contact {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#contact:hover {
+    color: red;
+}
+
+#account {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none
+}
+
+#account:hover {
+    color: red;
+}
+
+#avatar {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+#avatar:hover {
+    color: red;
+}
+
+.spacer {
+    flex: 1 1 auto;
 }

@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomePageComponent } from './home-page.component';
+import { GamePlayComponent } from './game-play.component';
 
-const routes: Routes = [{ path: '', component: HomePageComponent }];
+const routes: Routes = [{ path: '', component: GamePlayComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule { }
-
-// delete
+export class GamePlayRoutingModule { }

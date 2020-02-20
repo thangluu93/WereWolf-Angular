@@ -1,337 +1,766 @@
-    .footer {
-        min-height: 185px;
-        border-bottom: 7px solid #EE2E24;
-        padding-top: 55px;
-        padding-bottom: 45px;
-        background: #000;
-    }
-    
-    .container {
-        max-width: 750px;
-        display: flex;
-    }
-    
-    .container {
-        max-width: 975px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .col-6 {
-        width: 50%;
-    }
-    
-    .col {
-        padding-left: 15px;
-        padding-right: 15px;
-        float: left;
-    }
-    
-    .logos-line-1 {
-        max-width: 272px;
-        margin: 0 auto;
-    }
-    
-    .logos-line-2 {
-        padding-top: 20px;
-        margin-bottom: 40px;
-        max-width: 272px;
-        margin: 0 auto;
-    }
-    
-    .xbox-one-logo {
-        width: 60px;
-        margin-right: 33px;
-    }
-    
-    .esrb-logo {
-        width: 91px;
-        margin-right: 53px;
-    }
-    
-    .pegi-logo {
-        width: 117px;
-    }
-    
-    .facebook-icon {
-        width: 29px;
-        height: 29px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .facebook-icon:hover {
-        opacity: 1
-    }
-    
-    .twitter-icon {
-        width: 33px;
-        height: 27px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .twitter-icon:hover {
-        opacity: 1
-    }
-    
-    .chat-icon {
-        width: 31px;
-        height: 31px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .chat-icon:hover {
-        opacity: 1
-    }
-    
-    .discord-icon {
-        width: 33px;
-        height: 35px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .discord-icon:hover {
-        opacity: 1
-    }
-    
-    .reddit-icon {
-        width: 40px;
-        height: 33px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .reddit-icon:hover {
-        opacity: 1
-    }
-    
-    .twitch-icon {
-        width: 33px;
-        height: 32px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .twitch-icon:hover {
-        opacity: 1
-    }
-    
-    .legalcopy {
-        margin-top: 30px;
-    }
-    
-    .xbox-one-logo {
-        width: 60px;
-        margin-right: 33px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .xbox-one-logo:hover {
-        opacity: 1
-    }
-    
-    .ps4-logo {
-        width: 81px;
-        margin-right: 33px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .ps4-logo:hover {
-        opacity: 1
-    }
-    
-    .steam-logo {
-        width: 49px;
-        opacity: 0.6;
-        transition: 0.3s;
-    }
-    
-    .steam-logo:hover {
-        opacity: 1
-    }
-    
-    .esrb-logo {
-        width: 91px;
-        margin-right: 53px;
-    }
-    
-    .social {
-        cursor: pointer;
-        margin-right: 15px;
-    }
-    
-    img {
-        max-width: 100%;
-        vertical-align: middle;
-    }
-    
-    div {
-        display: block;
-    }
-    
-    a {
-        color: #EFEFE3;
-    }
-    
-    body {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-        line-height: 1.1;
-        font-weight: 400;
-        color: #fff;
-        background-color: #171717;
-        opacity: 1;
-        transition: 1s opacity;
-        -webkit-font-smoothing: antialiased;
-    }
-    
-    .containerForm {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .padding-b-lg {
-        padding-bottom: 70px;
-    }
-    
-    .padding-t-lg {
-        padding-top: 70px;
-    }
-    
-    .bg-beige {
-        background: #e8e7e1;
-    }
-    
-    .text-center {
-        text-align: center;
-    }
-    
-    .col-xs-12 {
-        width: 100%;
-    }
-    
-    .newsletter input[type="submit"] {
-        width: 20%;
-    }
-    
-    .newsletter input[type="submit"] {
-        background: url("http://www.rustylake.com//assets/img/arrow-newsletter.png") no-repeat center #542437;
-        width: 90px;
-        margin-left: -10px;
-        border: none;
-        margin-top: -1px;
-    }
-    
-    .newsletter input {
-        height: 73px;
-    }
-    
-    input,
-    button,
-    select,
-    textarea {
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-    }
-    
-    .newsletter input[type="text"],
-    .newsletter input[type="email"] {
-        width: 80%;
-    }
-    
-    .newsletter input[type="text"],
-    .newsletter input[type="email"] {
-        width: 450px;
-        margin-right: 0;
-        padding-left: 30px;
-        border: none;
-    }
-    
-    .newsletter input {
-        height: 73px;
-    }
-    
-    input,
-    button,
-    select,
-    textarea {
-        font-family: inherit;
-        font-size: inherit;
-        line-height: inherit;
-    }
-    
-    input {
-        -webkit-writing-mode: horizontal-tb !important;
-        text-rendering: auto;
-        color: -internal-light-dark-color(black, white);
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        text-indent: 0px;
-        text-shadow: none;
-        display: inline-block;
-        text-align: start;
-        -webkit-appearance: textfield;
-        background-color: -internal-light-dark-color(white, black);
-        -webkit-rtl-ordering: logical;
-        cursor: text;
-        margin: 0em;
-        font: 400 13.3333px Arial;
-        padding: 1px 0px;
-        border-width: 2px;
-        border-style: inset;
-        border-color: initial;
-        border-image: initial;
-    }
-    
-    .newsletter-bottom {
-        background: url("http://www.rustylake.com//assets/img/newsletter-bottom.png") no-repeat center;
-        height: 18px;
-    }
-    
-    .newsletter-top {
-        background: url("http://www.rustylake.com//assets/img/newsletter-top.png") no-repeat center;
-        height: 12px;
-    }
-    
-    .margin-b-md {
-        margin-bottom: 50px;
-    }
-    
-    .spacing {
-        letter-spacing: 1.8px;
-    }
-    
-    .uppercase {
-        text-transform: uppercase;
-    }
-    
-    .extra-bold {
-        font-weight: 900;
-    }
-    
-    .text-xl {
-        font-size: 26px;
-    }
-    
-    h1,
-    h2,
-    .secondary-font {
-        font-family: 'FF DIN Pro Condensed', sans-serif !important;
-        margin-top: 0 !important;
-    }
-    
-    h3,
-    .h3 {
-        font-size: 24px;
-    }
+.footer {
+    min-height: 185px;
+    border-bottom: 7px solid #EE2E24;
+    padding-top: 55px;
+    padding-bottom: 45px;
+    background: #000;
+}
+
+.container {
+    max-width: 750px;
+    display: flex;
+}
+
+.container {
+    max-width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.logos-line-1 {
+    max-width: 272px;
+    margin: 0 auto;
+}
+
+.logos-line-2 {
+    padding-top: 20px;
+    margin-bottom: 40px;
+    max-width: 272px;
+    margin: 0 auto;
+}
+
+.xbox-one-logo {
+    width: 60px;
+    margin-right: 33px;
+}
+
+.esrb-logo {
+    width: 91px;
+    margin-right: 53px;
+}
+
+.pegi-logo {
+    width: 117px;
+}
+
+.facebook-icon {
+    width: 29px;
+    height: 29px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.facebook-icon:hover {
+    opacity: 1
+}
+
+.twitter-icon {
+    width: 33px;
+    height: 27px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.twitter-icon:hover {
+    opacity: 1
+}
+
+.chat-icon {
+    width: 31px;
+    height: 31px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.chat-icon:hover {
+    opacity: 1
+}
+
+.discord-icon {
+    width: 33px;
+    height: 35px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.discord-icon:hover {
+    opacity: 1
+}
+
+.reddit-icon {
+    width: 40px;
+    height: 33px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.reddit-icon:hover {
+    opacity: 1
+}
+
+.twitch-icon {
+    width: 33px;
+    height: 32px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.twitch-icon:hover {
+    opacity: 1
+}
+
+.legalcopy {
+    margin-top: 30px;
+}
+
+.xbox-one-logo {
+    width: 60px;
+    margin-right: 33px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.xbox-one-logo:hover {
+    opacity: 1
+}
+
+.ps4-logo {
+    width: 81px;
+    margin-right: 33px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.ps4-logo:hover {
+    opacity: 1
+}
+
+.steam-logo {
+    width: 49px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.steam-logo:hover {
+    opacity: 1
+}
+
+.esrb-logo {
+    width: 91px;
+    margin-right: 53px;
+}
+
+.social {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+div {
+    display: block;
+}
+
+a {
+    color: #EFEFE3;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #fff;
+    background-color: #171717;
+    opacity: 1;
+    transition: 1s opacity;
+    -webkit-font-smoothing: antialiased;
+}
+
+.containerForm {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.padding-b-lg {
+    padding-bottom: 70px;
+}
+
+.padding-t-lg {
+    padding-top: 70px;
+}
+
+.bg-beige {
+    background: #e8e7e1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.newsletter input[type="submit"] {
+    width: 20%;
+}
+
+.newsletter input[type="submit"] {
+    background: url("http://www.rustylake.com//assets/img/arrow-newsletter.png") no-repeat center #542437;
+    width: 90px;
+    margin-left: -10px;
+    border: none;
+    margin-top: -1px;
+}
+
+.newsletter input {
+    height: 73px;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 80%;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 450px;
+    margin-right: 0;
+    padding-left: 30px;
+    border: none;
+}
+
+.newsletter input {
+    height: 73px;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.newsletter-bottom {
+    background: url("http://www.rustylake.com//assets/img/newsletter-bottom.png") no-repeat center;
+    height: 18px;
+}
+
+.newsletter-top {
+    background: url("http://www.rustylake.com//assets/img/newsletter-top.png") no-repeat center;
+    height: 12px;
+}
+
+.margin-b-md {
+    margin-bottom: 50px;
+}
+
+.spacing {
+    letter-spacing: 1.8px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.extra-bold {
+    font-weight: 900;
+}
+
+.text-xl {
+    font-size: 26px;
+}
+
+h1,
+h2,
+.secondary-font {
+    font-family: 'FF DIN Pro Condensed', sans-serif !important;
+    margin-top: 0 !important;
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+}
+
+.footer p {
+    font-size: 10px;
+    color: #63778D;
+    letter-spacing: 0;
+    line-height: 15px;
+    text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.30);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 15px;
+}
+
+.footerlinks a {
+    font-size: 10px;
+    color: #63778D;
+    letter-spacing: 0;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #EFEFE3;
+}
+
+.footerlinks a :hover {
+    color: red;
+}
+
+.footer {
+    min-height: 185px;
+    max-height: 270px;
+    border-bottom: 7px solid #EE2E24;
+    padding-top: 55px;
+    padding-bottom: 45px;
+    background: #000;
+}
+
+.container {
+    max-width: 750px;
+    display: flex;
+}
+
+.container {
+    max-width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.logos-line-1 {
+    max-width: 442px;
+    height: 57px;
+}
+
+.logos-line-2 {
+    max-width: 442px;
+    height: 57px;
+    padding-top: 42px;
+    margin: 0;
+    max-width: 272px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logos-line-2 {
+    padding-top: 20px;
+    margin-bottom: 40px;
+    max-width: 272px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.esrb-logo {
+    width: 135px;
+    height: 68px;
+    margin-right: 60px;
+}
+
+.pegi-logo {
+    width: 162px;
+    height: 69px;
+}
+
+.facebook-icon {
+    width: 29px;
+    height: 29px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.facebook-icon:hover {
+    opacity: 1
+}
+
+.twitter-icon {
+    width: 33px;
+    height: 27px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.twitter-icon:hover {
+    opacity: 1
+}
+
+.chat-icon {
+    width: 31px;
+    height: 31px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.chat-icon:hover {
+    opacity: 1
+}
+
+.discord-icon {
+    width: 33px;
+    height: 35px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.discord-icon:hover {
+    opacity: 1
+}
+
+.reddit-icon {
+    width: 40px;
+    height: 33px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.reddit-icon:hover {
+    opacity: 1
+}
+
+.twitch-icon {
+    width: 33px;
+    height: 32px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.twitch-icon:hover {
+    opacity: 1
+}
+
+.xbox-one-logo {
+    width: 85px;
+    height: 50px;
+    margin: 0 45px 0 0;
+    padding: 0;
+    border: 0;
+    width: 87px;
+    margin-right: 45px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.xbox-one-logo:hover {
+    opacity: 1
+}
+
+.ps4-logo {
+    width: 112px;
+    height: 23px;
+    opacity: 0.6;
+    transition: 0.3s;
+    margin: 0 45px 0 0;
+    margin-right: 45px;
+    opacity: 0.6;
+    transition: 0.3s;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.ps4-logo:hover {
+    opacity: 1
+}
+
+.steam-logo {
+    width: 70px;
+    height: 57px;
+    width: 80px;
+    opacity: 0.6;
+    transition: 0.3s;
+    margin-left: 45px;
+}
+
+.steam-logo:hover {
+    opacity: 1
+}
+
+.esrb-logo {
+    width: 135px;
+    margin-right: 53px;
+}
+
+.social {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+div {
+    display: block;
+}
+
+a {
+    color: #63778D;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+a:hover {
+    color: red;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #fff;
+    background-color: #171717;
+    opacity: 1;
+    transition: 1s opacity;
+    -webkit-font-smoothing: antialiased;
+}
+
+.containerForm {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.padding-b-lg {
+    padding-bottom: 70px;
+}
+
+.padding-t-lg {
+    padding-top: 70px;
+}
+
+.bg-beige {
+    background: #e8e7e1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.newsletter input[type="submit"] {
+    width: 20%;
+}
+
+.newsletter input[type="submit"] {
+    background: url("http://www.rustylake.com//assets/img/arrow-newsletter.png") no-repeat center #542437;
+    width: 90px;
+    margin-left: -10px;
+    border: none;
+    margin-top: -1px;
+}
+
+.newsletter input {
+    height: 73px;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 80%;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 450px;
+    margin-right: 0;
+    padding-left: 30px;
+    border: none;
+}
+
+.newsletter input {
+    height: 73px;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.newsletter-bottom {
+    background: url("http://www.rustylake.com//assets/img/newsletter-bottom.png") no-repeat center;
+    height: 18px;
+}
+
+.newsletter-top {
+    background: url("http://www.rustylake.com//assets/img/newsletter-top.png") no-repeat center;
+    height: 12px;
+}
+
+.margin-b-md {
+    margin-bottom: 50px;
+}
+
+.spacing {
+    letter-spacing: 1.8px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.extra-bold {
+    font-weight: 900;
+}
+
+.text-xl {
+    font-size: 26px;
+}
+
+h1,
+h2,
+.secondary-font {
+    font-family: 'FF DIN Pro Condensed', sans-serif !important;
+    margin-top: 0 !important;
+}
+
+.h3 {
+    font-size: 24px;
+}
+
+HEAD .legalcopy {
+    margin-top: 30px;
+    color: #63778D;
+}
+
+.footerlinks a {
+    font-size: 10px;
+    color: #63778D;
+    letter-spacing: 0;
+    line-height: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a {
+    color: #EFEFE3;
+}
+
+.footerlinks a:hover {
+    font-size: 10px;
+    color: #EE2E24;
+    letter-spacing: 0;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.footer p sup {
+    font-size: 7px;
+}
+
+a {
+    text-decoration: none;
+}
