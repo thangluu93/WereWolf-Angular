@@ -1,17 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-<<<<<<< HEAD
 import { Router } from '@angular/router';
-=======
-//firebase
-// import { AngularFirestore } from '@angular/fire/firestore';
-// import { AngularFireAuth } from '@angular/fire/auth';
-// import { auth } from 'firebase/app';
-// import { UserDataService } from 'src/app/services/user-data.service';
-// import { resolve } from 'url';
-// import { MatDialogRef  } from '@angular/material/dialog';
->>>>>>> afe021dd87fac21abe0c37f237cabd16bff61074
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -20,15 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LogInDialogComponent implements OnInit {
 
-<<<<<<< HEAD
   constructor(public snackBar: MatSnackBar, public Router: Router) { }
-=======
-  constructor(public snackBar: MatSnackBar,
-              // public userDataService: UserDataService,
-              // private afAuth: AngularFireAuth,
-              // private dialogRef: MatDialogRef<LogInDialogComponent>
-    ) { }
->>>>>>> afe021dd87fac21abe0c37f237cabd16bff61074
 
   isSignUp = true;
 

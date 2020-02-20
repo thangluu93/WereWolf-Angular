@@ -15,7 +15,6 @@
                 <input matInput placeholder="password" [formControl]="password" required type='password'>
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
             </mat-form-field>
-<<<<<<< HEAD
             <!-- Input Retype Password -->
             <mat-form-field class="example-full-width">
                 <mat-label>Enter your password again</mat-label>
@@ -23,9 +22,6 @@
                 <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}}</mat-error>
             </mat-form-field>
             <!-- Log In Button -->
-=======
-                                    <!-- Log In Button -->
->>>>>>> afe021dd87fac21abe0c37f237cabd16bff61074
             <div class="example-button-row">
                 <button mat-raised-button color="primary">Log In</button>
             </div>
@@ -76,7 +72,7 @@
             <nb-card-footer>By Shu</nb-card-footer>
           </nb-card>
         </ng-template>
-        
+
         <ng-template #authenticated>
           <nb-card status="basic">
             <nb-card-header>Welcome back !!!</nb-card-header>
