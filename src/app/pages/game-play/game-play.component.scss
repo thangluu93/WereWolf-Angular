@@ -22,11 +22,49 @@
     }
     
     .messcontent {
-        width: 90%;
-        height: 80%;
+        width: 85%;
+        height: 75%;
         border-left: 2px solid #020202;
         border-right: 2px solid #020202;
         border-bottom: 2px solid #020202;
         border-top: 2px solid #020202;
         margin-left: 10px;
+    }
+    
+    .game-play {
+        background-image: url(../../../assets/leafless-tree-border-made-bush-brunches.jpg);
+        width: 80%;
+        height: 200%;
+        z-index: 1;
+    }
+    
+    #new-game {
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        color: red;
+    }
+    
+    .button-game-play {
+        flex-direction: column;
+        margin-top: 30%;
+        margin-left: 0%;
+    }
+    
+    #new-game-button {
+        width: 200px;
+        height: 200px;
+        font-size: 25px;
+    }
+    
+    .inputform {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        align-items: center;
+    }
+    
+    .iconsend {
+        color: blue;
+        border: none;
     }
