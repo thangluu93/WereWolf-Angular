@@ -10,3 +10,5 @@ const routes: Routes = [{ path: '', component: HomePageComponent }];
   exports: [RouterModule]
 })
 export class HomePageRoutingModule { }
+
+// delete
