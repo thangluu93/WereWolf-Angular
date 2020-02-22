@@ -1,79 +1,54 @@
-<mat-tab-group mat-align-tabs="center" >
-<!-- Log In -->
+<mat-tab-group mat-align-tabs="center" id="login" >
+    <!-- Log In -->
 
-    <mat-tab label="Log In"> 
+    <mat-tab label="Log In" id="login">
         <form class="example-form">
-                                    <!-- Input Email -->
+            <!-- Input Email -->
             <mat-form-field class="example-full-width">
                 <mat-label>Enter your email</mat-label>
                 <input matInput placeholder="pat@example.com" [formControl]="email" required>
                 <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
             </mat-form-field>
-                                    <!-- Inpput Password -->
+            <!-- Inpput Password -->
             <mat-form-field class="example-full-width">
                 <mat-label>Enter your password</mat-label>
                 <input matInput placeholder="password" [formControl]="password" required type='password'>
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
             </mat-form-field>
-                                    <!-- Log In Button -->
+            <!-- Log In Button -->
             <div class="example-button-row">
-                <button mat-raised-button color="primary"  >Log In</button>
+                <button mat-raised-button color="primary" *ngIf="isLogIn" (click)="LogIn()" >Log In</button>
+                <button mat-raised-button (click)="loginwithGG()" >Login With Google</button>
             </div>
         </form>
     </mat-tab>
 
-<!-- Sign Up -->
+    <!-- Sign Up -->
 
     <mat-tab label="Sign Up">
         <form class="example-form">
-                                    <!-- Input Email -->
+            <!-- Input Email -->
             <mat-form-field class="example-full-width">
                 <mat-label>Enter your email</mat-label>
                 <input matInput placeholder="pat@example.com" [formControl]="email" required>
                 <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
             </mat-form-field>
-                                    <!-- Inpput Password -->
+            <!-- Inpput Password -->
             <mat-form-field class="example-full-width">
                 <mat-label>Enter your password</mat-label>
                 <input matInput placeholder="password" [formControl]="password" required type='password'>
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
             </mat-form-field>
-                                    <!-- Input Retype Password -->
+            <!-- Input Retype Password -->
             <mat-form-field class="example-full-width">
                 <mat-label>Enter your password again</mat-label>
                 <input matInput placeholder="retype password" [formControl]="retypePassword" required type='password'>
                 <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}}</mat-error>
             </mat-form-field>
-                                    <!--Sign Up Button -->
+            <!--Sign Up Button -->
             <div class="example-button-row">
                 <button mat-raised-button color="primary" *ngIf="isSignUp" (click)="signUp()">Sign Up</button>
             </div>
         </form>
     </mat-tab>
-    <!-- Login With Google -->
-    <mat-tab label = "Login-With-Google">
-        <!-- <div *ngIf="UserDataService.user$ | async; then authenticated else guest">
-        </div>
-        <ng-template #guest>
-          <nb-card status="basic">
-            <nb-card-header>Login with Google</nb-card-header>
-            <nb-card-body>
-              <button nbButton fullWidth status="primary" (click)="loginWithGoogle()">Login</button>
-            </nb-card-body>
-            <nb-card-footer>By Shu</nb-card-footer>
-          </nb-card>
-        </ng-template>
-        
-        <ng-template #authenticated>
-          <nb-card status="basic">
-            <nb-card-header>Welcome back !!!</nb-card-header>
-            <nb-card-body>
-              <button nbButton fullWidth status="primary" (click)="signOut()">Log out</button>
-            </nb-card-body>
-            <nb-card-footer>By Shu</nb-card-footer>
-          </nb-card>
-        </ng-template> -->
-    </mat-tab>
-
-
 </mat-tab-group>
