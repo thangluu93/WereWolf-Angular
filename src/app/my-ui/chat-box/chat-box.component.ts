@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { SocketioService } from "src/app/socketio.service";
+import { SocketioService } from "../../socketio.service";
 
 @Component({
   selector: "app-chat-box",
@@ -32,7 +32,7 @@ export class ChatBoxComponent implements OnInit {
       }
       this.messageLists.push(data);
       console.log(this.messageLists);
-    })
+    });
     this.SocketioService.getDataFormRecoverofRoom().subscribe(data => {
       if (this._RecoverMessagesFlag) {
         this.SocketioService.recoverMess.unsubscribe()
