@@ -64,7 +64,9 @@ export class LogInDialogComponent implements OnInit {
 
 
  async loginwithGG(){
-  await this.user.logingg();
+  await this.user.logingg().then(() =>{
+    this.Router.navigate(['game-play'])
+  })
 }
 }
 

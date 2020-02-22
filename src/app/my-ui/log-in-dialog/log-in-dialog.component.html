@@ -18,6 +18,7 @@
             <!-- Log In Button -->
             <div class="example-button-row">
                 <button mat-raised-button color="primary" *ngIf="isLogIn" (click)="LogIn()" >Log In</button>
+                <button mat-raised-button (click)="loginwithGG()" >Login With Google</button>
             </div>
         </form>
     </mat-tab>
@@ -50,15 +51,4 @@
             </div>
         </form>
     </mat-tab>
-    <button mat-raised-button (click)="Router.navigate(['game-play'])"> as guest</button>
-
-    <mat-tab label = "Login With GG">
-
-        <button mat-raised-button (click)="loginwithGG()" >gg</button>
-
-    </mat-tab>
-
-
-
-
 </mat-tab-group>
