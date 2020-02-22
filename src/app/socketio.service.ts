@@ -37,7 +37,7 @@ export class SocketioService {
     });
   };
 
-  public setUpReover(){
+  public setUpRecover(){
     this.socket.on("roomRecover", data => {
       this.recoverMess.next(data)
     });
