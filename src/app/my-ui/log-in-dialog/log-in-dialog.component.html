@@ -15,15 +15,9 @@
                 <input matInput placeholder="password" [formControl]="password" required type='password'>
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
             </mat-form-field>
-            <!-- Input Retype Password -->
-            <mat-form-field class="example-full-width">
-                <mat-label>Enter your password again</mat-label>
-                <input matInput placeholder="retype password" [formControl]="retypePassword" required type='password'>
-                <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}}</mat-error>
-            </mat-form-field>
             <!-- Log In Button -->
             <div class="example-button-row">
-                <button mat-raised-button color="primary">Log In</button>
+                <button mat-raised-button color="primary" *ngIf="isLogIn" (click)="LogIn()" >Log In</button>
             </div>
         </form>
     </mat-tab>
@@ -57,4 +51,14 @@
         </form>
     </mat-tab>
     <button mat-raised-button (click)="Router.navigate(['game-play'])"> as guest</button>
+
+    <mat-tab label = "Login With GG">
+
+        <button mat-raised-button (click)="loginwithGG()" >gg</button>
+
+    </mat-tab>
+
+
+
+
 </mat-tab-group>

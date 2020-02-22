@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { UsersService } from 'src/app/services/users.service';
+import {  AngularFireAuth} from '@angular/fire/auth'
+import { AngularFirestore } from '@angular/fire/firestore';
+import {auth} from 'firebase';
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -10,9 +14,13 @@ import { Router } from '@angular/router';
 })
 export class LogInDialogComponent implements OnInit {
 
-  constructor(public snackBar: MatSnackBar, public Router: Router) { }
+  constructor(public snackBar: MatSnackBar, public Router: Router,
+    public db:AngularFirestore,
+    public afAuth:AngularFireAuth,
+    public user:UsersService) { }
 
   isSignUp = true;
+  isLogIn = true;
 
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required, Validators.minLength(8)]);
@@ -30,7 +38,7 @@ export class LogInDialogComponent implements OnInit {
 
   getPasswordError() {
     return this.password.hasError('required') ? 'You must enter a password' :
-        this.password.hasError('minLength') ? 'You password must have 8 characters' :
+    this.password.hasError('minLength') ? 'You password must have 8 characters' :
           '';
   }
 
@@ -46,23 +54,17 @@ export class LogInDialogComponent implements OnInit {
       return;
     }
   }
+  LogIn(){
+    this.afAuth.auth.signInWithEmailAndPassword(this.email.value,this.password.value).then(() => {
+      this.snackBar.open('Success' , 'OK', {duration : 2000});
+    }).catch((err) => {
+      this.snackBar.open(err, 'OK',{duration: 2000});
+    });
+  }
 
 
-
-  // Login With Google
-  // async loginWithGoogle() {
-  //   const provider = new auth.GoogleAuthProvider();
-  //   const credetial = await this.afAuth.auth.signInWithPopup(provider);
-  //   return this.userDataService.updateUserData(credetial.user)
-  //   .then(() =>
-  //     setTimeout(this.dialogRef.close, 1000)
-  //   )
-  //   .catch(err => console.log(err));
-  // }
-
-  // signOut() {
-  //   this.userDataService.logOut();
-  //   setTimeout(this.dialogRef.close, 1000);
-  // }
+ async loginwithGG(){
+  await this.user.logingg();
+}
 }
 
