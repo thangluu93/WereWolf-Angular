@@ -25,6 +25,7 @@ export class SocketioService {
   public sendData(data) {
     this.socket.emit("send",data);
   }
+  
 
   public getData = () => {
     return Observable.create(observer => {
