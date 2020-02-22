@@ -1,0 +1,40 @@
+<!-- <ul id="messages" ></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script> -->
+
+    <!-- <script>
+      $(function () {
+        var socket = io();
+        $('form').submit(function(){
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<li>').text(msg));
+          window.scrollTo(0, document.body.scrollHeight);
+        });
+      });
+    </script> -->
+
+    <!-- <div  *ngFor="let message of messageList"></div> -->
+
+    <div id="chat">
+      <div id="chat-window">
+        <!-- Recover Mess area -->
+        <div *ngIf="_RecoverMessagesFlag">
+          <div id="outputArea" *ngFor="let messageList of messageListsRocover">
+            {{messageList.name}} : {{messageList.message}}
+            </div>
+        </div>
+        <div id="outputArea" *ngFor="let messageList of messageLists">
+            {{messageList.name}} : {{messageList.message}}
+        </div>
+      </div>
+    <input [(ngModel)]="name">
+    <input [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()" />
+    <button (click)="sendMessage()">Send Message</button>
+    </div>
