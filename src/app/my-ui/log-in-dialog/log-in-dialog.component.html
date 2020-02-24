@@ -1,4 +1,4 @@
-<mat-tab-group mat-align-tabs="center" id="login">
+<mat-tab-group mat-align-tabs="center" id="login" >
     <!-- Log In -->
 
     <mat-tab label="Log In" id="login">
@@ -15,15 +15,10 @@
                 <input matInput placeholder="password" [formControl]="password" required type='password'>
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
             </mat-form-field>
-            <!-- Input Retype Password -->
-            <mat-form-field class="example-full-width">
-                <mat-label>Enter your password again</mat-label>
-                <input matInput placeholder="retype password" [formControl]="retypePassword" required type='password'>
-                <mat-error *ngIf="retypePassword.invalid">{{getRetypePasswordError()}}</mat-error>
-            </mat-form-field>
             <!-- Log In Button -->
             <div class="example-button-row">
-                <button mat-raised-button color="primary">Log In</button>
+                <button mat-raised-button color="primary" *ngIf="isLogIn" (click)="LogIn()" >Log In</button>
+                <button mat-raised-button (click)="loginwithGG()" >Login With Google</button>
             </div>
         </form>
     </mat-tab>
