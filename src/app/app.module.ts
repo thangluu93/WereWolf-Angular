@@ -26,12 +26,12 @@ import { AngularFireStorageModule} from '@angular/fire/storage'
     BrowserAnimationsModule,
     RouterModule,
     MyUiModule,
-   
+
     // Firebaselib
     AngularFireModule,
     AngularFirestoreModule,  //firestore
     AngularFireAuthModule,   //auth
-    AngularFireStorageModule,//Storage    
+    AngularFireStorageModule,//Storage
 
   ],
   providers: [],

@@ -46,5 +46,23 @@ export class LogInDialogComponent implements OnInit {
       return;
     }
   }
+
+
+
+  // Login With Google
+  // async loginWithGoogle() {
+  //   const provider = new auth.GoogleAuthProvider();
+  //   const credetial = await this.afAuth.auth.signInWithPopup(provider);
+  //   return this.userDataService.updateUserData(credetial.user)
+  //   .then(() =>
+  //     setTimeout(this.dialogRef.close, 1000)
+  //   )
+  //   .catch(err => console.log(err));
+  // }
+
+  // signOut() {
+  //   this.userDataService.logOut();
+  //   setTimeout(this.dialogRef.close, 1000);
+  // }
 }
 
