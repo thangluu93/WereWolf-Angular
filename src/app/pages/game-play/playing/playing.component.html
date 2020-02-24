@@ -1,72 +1,8 @@
-<!---->
-
 <div style="background-color: black;height: 100%;">
     <mat-drawer-container class="example-container">
-        <mat-drawer mode="side" opened style="background-color: blanchedalmond;width: 20%;">
 
-            <div class="messcontent">
-
-                <P>
-                    mess user text here!!
-                </P>
-
-            </div>
-            <div class="inputform">
-                <form id="lobbyChatForm" action=""><input id="lobbyChatInput" autocomplete="off" maxlength="280" placeholder="Type here" style="color:red; width:200px; border:2px solid black; padding-left:5px; background-color:inherit;display:block;margin-top:10px;height:30px;outline:none;">
-                </form>
-
-                <div class="iconsend">
-
-
-                    <button mat-icon-button aria-label="Example icon-button with a heart icon">
-                        <mat-icon>send</mat-icon> </button>
-
-                </div>
-
-            </div>
-
-        </mat-drawer>
-
-        <mat-drawer-content style="background-color: #212121;">
-            <mat-toolbar style="background-color: #212121;">
-                <div class="exitbutton">
-                    <button mat-raised-button color="primary" (click)="Router.navigate(['game-play'])">Exit</button>
-
-                </div>
-                <span class="example-spacer"></span>
-                <div class="gametime">
-                    time count down here
-                </div>
-            </mat-toolbar>
-            <div>
-                <div class="main">
-                    <div class="table">
-
-
-                        <div id="seat0" class="seat">
-                            player one here
-                        </div>
-                        <div id="seat1" class="seat">
-                            player two here
-                        </div>
-                        <div id="seat2" class="seat">
-                            player three here
-                        </div>
-                        <div id="seat3" class="seat">
-                            player four here
-                        </div>
-                        <div id="seat4" class="seat">
-                            player five here
-                        </div>
-                        <div id="seat5" class="seat">
-                            player six here
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </mat-drawer-content>
+        <app-chat-box></app-chat-box>
+        <app-playing-fiel></app-playing-fiel>
 
     </mat-drawer-container>
 </div>

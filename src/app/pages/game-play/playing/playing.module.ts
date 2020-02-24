@@ -7,6 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { MyUiModule } from 'src/app/my-ui/my-ui.module';
 
 
 
@@ -19,7 +20,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MyUiModule,
     
   ]
 })
