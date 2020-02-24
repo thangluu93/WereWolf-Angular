@@ -26,6 +26,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 
+
 @NgModule({
   declarations: [NavBarComponent, LogInDialogComponent, FooterComponent, InstructionComponent, ChatBoxComponent, PlayingFielComponent],
   imports: [

@@ -1,8 +1,8 @@
-import { environment } from "../../../environments/environment.prod";
+import { environment } from "../../../environments/environment";
 // import { Injectable, Query } from '@angular/core';
 import * as io from "socket.io-client";
 // import { Message } from '../app/my-ui/chat-box/chat-box.component';
-import { Observable, observable, Subject } from "rxjs";
+import { Observable, Subject } from "rxjs";
 
 export class SocketioService {
   socket;
