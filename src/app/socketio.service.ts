@@ -17,15 +17,15 @@ export class SocketioService {
   constructor() {
   }
   setupSocketConnection() {
-    this.socket = io(environment.SOCKET_ENDPOINT, function(socket) {
+    this.socket = io(environment.SOCKET_ENDPOINT, function (socket) {
 
     });
   }
 
   public sendData(data) {
-    this.socket.emit("send",data);
+    this.socket.emit("send", data);
   }
-  
+
 
   public getData = () => {
     return Observable.create(observer => {
@@ -37,16 +37,20 @@ export class SocketioService {
     });
   };
 
-  public setUpRecover(){
-    this.socket.on("roomRecover", data => {
-      this.recoverMess.next(data)
-    });
+  public setUpRecover() {
+    this.socket.on('reconnect', (socket) => {
+      {
+        this.socket.on("roomRecover", data => {
+          this.recoverMess.next(data)
+        });
+      }
+    })
   }
 
-  public getDataFormRecoverofRoom(): Observable<any>{
+  public getDataFormRecoverofRoom(): Observable<any> {
     return this.recoverMess.asObservable();
-    };
   };
+};
 
 
 // this.data = JSON.stringify({ name: this.name, message: this.msg })
