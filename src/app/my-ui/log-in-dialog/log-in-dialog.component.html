@@ -1,4 +1,4 @@
-<mat-tab-group mat-align-tabs="center">
+<mat-tab-group mat-align-tabs="center" id="login">
     <!-- Log In -->
 
     <mat-tab label="Log In" id="login">
@@ -56,11 +56,10 @@
             </div>
         </form>
     </mat-tab>
-    <<<<<<< HEAD <button mat-raised-button (click)="Router.navigate(['game-play'])"> as guest</button>
-        =======
-        <!-- Login With Google -->
-        <mat-tab label="Login-With-Google">
-            <!-- <div *ngIf="UserDataService.user$ | async; then authenticated else guest">
+    <button mat-raised-button (click)="Router.navigate(['game-play'])"> as guest</button>
+    <!-- Login With Google -->
+    <mat-tab label="Login-With-Google">
+        <!-- <div *ngIf="UserDataService.user$ | async; then authenticated else guest">
         </div>
         <ng-template #guest>
           <nb-card status="basic">
@@ -81,7 +80,7 @@
             <nb-card-footer>By Shu</nb-card-footer>
           </nb-card>
         </ng-template> -->
-        </mat-tab>
+    </mat-tab>
 
 
 </mat-tab-group>
