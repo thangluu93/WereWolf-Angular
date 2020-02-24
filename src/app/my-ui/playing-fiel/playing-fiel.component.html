@@ -1,4 +1,4 @@
-<mat-drawer-content style="background-color: #212121;">
+<!-- <mat-drawer-content style="background-color: #212121;">
     <mat-toolbar style="background-color: #212121;">
         <div class="exitbutton">
             <button mat-raised-button color="primary" (click)="Router.navigate(['game-play'])">Exit</button>
@@ -37,4 +37,51 @@
 
         </div>
     </div>
-</mat-drawer-content>
+</mat-drawer-content> -->
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened></mat-drawer>
+    <mat-drawer-content>
+
+        <mat-drawer-content style="background-color: #212121;">
+            <mat-toolbar style="background-color: #212121;">
+                <div class="exitbutton">
+                    <button mat-raised-button color="primary" (click)="Router.navigate(['game-play'])">Exit</button>
+
+                </div>
+                <span class="example-spacer"></span>
+                <div class="gametime">
+                    time count down here
+                </div>
+            </mat-toolbar>
+            <div>
+                <div class="main">
+                    <div class="table">
+
+
+                        <div id="seat0" class="seat">
+                            player one here
+                        </div>
+                        <div id="seat1" class="seat">
+                            player two here
+                        </div>
+                        <div id="seat2" class="seat">
+                            player three here
+                        </div>
+                        <div id="seat3" class="seat">
+                            player four here
+                        </div>
+                        <div id="seat4" class="seat">
+                            player five here
+                        </div>
+                        <div id="seat5" class="seat">
+                            player six here
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </mat-drawer-content>
+    </mat-drawer-content>
+</mat-drawer-container>
