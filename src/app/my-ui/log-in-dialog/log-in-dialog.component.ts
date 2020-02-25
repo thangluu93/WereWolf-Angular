@@ -6,6 +6,8 @@ import { UsersService } from 'src/app/services/users.service';
 import {  AngularFireAuth} from '@angular/fire/auth'
 import { AngularFirestore } from '@angular/fire/firestore';
 import {auth} from 'firebase';
+// import { Observable } from 'rxjs'
+// import { AngularFireDatabase } from '@angular/fire/database'
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -14,10 +16,17 @@ import {auth} from 'firebase';
 })
 export class LogInDialogComponent implements OnInit {
 
+  // textValue = '';
+  // texts : Observable <any[]>;
+
   constructor(public snackBar: MatSnackBar, public Router: Router,
     public db:AngularFirestore,
     public afAuth:AngularFireAuth,
-    public user:UsersService) { }
+    public user:UsersService,
+    // public db:AngularFireDatabase
+    ) { 
+      // this.texts = db.collection('text').valueChanges();
+    }
 
   isSignUp = true;
   isLogIn = true;
@@ -49,6 +58,9 @@ export class LogInDialogComponent implements OnInit {
   }
 
   signUp() {
+    if (this.email.value == 0) {
+      this.snackBar.open('Please Input Infomation','OK', {duration: 2000});
+    }
     if (this.password.value !== this.retypePassword.value) {
       this.snackBar.open('Retyped password does not match!!', 'OK', {duration: 2000});
       return;
@@ -63,10 +75,15 @@ export class LogInDialogComponent implements OnInit {
   }
 
 
- async loginwithGG(){
-  await this.user.logingg().then(() =>{
-    this.Router.navigate(['game-play'])
-  })
-}
+  async loginwithGG(){
+    await this.user.logingg().then(() =>{
+      this.Router.navigate(['game-play'])
+    })
+  }
+
+  // onSubmit(){
+  //   this.db.collection('text').doc(this.textValue);
+  //   this.textValue = '';
+  // }
 }
 
