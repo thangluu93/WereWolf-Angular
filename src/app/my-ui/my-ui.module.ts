@@ -19,11 +19,15 @@ import {MatExpansionModule} from '@angular/material/expansion'
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ChatBoxComponent } from './chat-box/chat-box.component';
+import { PlayingFielComponent } from './playing-fiel/playing-fiel.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 
 @NgModule({
-  declarations: [NavBarComponent, LogInDialogComponent, FooterComponent, InstructionComponent],
+  declarations: [NavBarComponent, LogInDialogComponent, FooterComponent, InstructionComponent, ChatBoxComponent, PlayingFielComponent],
   imports: [
     CommonModule,
     MatFormFieldModule, 
@@ -41,11 +45,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatExpansionModule,
     MatIconModule,
     MatSnackBarModule,
+    MatSidenavModule
 
   ],
   entryComponents:[
     InstructionComponent
   ],
-  exports: [NavBarComponent,LogInDialogComponent,FooterComponent],
+  exports: [NavBarComponent,LogInDialogComponent,FooterComponent,ChatBoxComponent,PlayingFielComponent],
 })
 export class MyUiModule { }
