@@ -15,7 +15,8 @@ export class ChatBoxComponent implements OnInit {
   _RecoverMessagesFlag = false;
   _RecoverMessagesSubcription
 
-  constructor(private SocketioService: SocketioService) { }
+  constructor(private SocketioService: SocketioService) {
+   }
 
   sendMessage() {
     if (this.newMessage != undefined) {
