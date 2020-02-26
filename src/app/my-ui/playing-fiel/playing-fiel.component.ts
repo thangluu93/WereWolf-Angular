@@ -7,10 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./playing-fiel.component.scss']
 })
 export class PlayingFielComponent implements OnInit {
-
-  constructor(public Router:Router) { }
+  
+  
+  constructor(public Router:Router) { 
+    
+  }
 
   ngOnInit(): void {
+    
   }
+
+  
+  
 
 }

@@ -8,6 +8,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MyUiModule } from 'src/app/my-ui/my-ui.module';
+// import { SocketioService } from "./../../services/socketIo/socket-io.service";
+
 
 
 
@@ -22,6 +24,7 @@ import { MyUiModule } from 'src/app/my-ui/my-ui.module';
     MatIconModule,
     MatToolbarModule,
     MyUiModule,
+    // SocketioService
     
   ]
 })
