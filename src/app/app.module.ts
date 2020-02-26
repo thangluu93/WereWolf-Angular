@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SocketioService } from './services/socketIo/socket-io.service';
 
 import { MyUiModule } from './my-ui/my-ui.module';
 
@@ -15,6 +16,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { AngularFireAuthModule} from '@angular/fire/auth'
 import { AngularFireStorageModule} from '@angular/fire/storage'
 import { environment } from 'src/environments/environment';
+;
+
 
 
 @NgModule({
@@ -34,8 +37,9 @@ import { environment } from 'src/environments/environment';
     AngularFireAuthModule,   //auth
     AngularFireStorageModule,//Storage
 
+
   ],
-  providers: [],
+  providers: [SocketioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

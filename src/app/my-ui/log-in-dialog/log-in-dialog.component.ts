@@ -3,7 +3,7 @@ import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { UsersService } from 'src/app/services/users.service';
-import {  AngularFireAuth} from '@angular/fire/auth'
+import { AngularFireAuth} from '@angular/fire/auth'
 import { AngularFirestore } from '@angular/fire/firestore';
 import {auth} from 'firebase';
 // import { Observable } from 'rxjs'
@@ -16,16 +16,11 @@ import {auth} from 'firebase';
 })
 export class LogInDialogComponent implements OnInit {
 
-  // textValue = '';
-  // texts : Observable <any[]>;
-
   constructor(public snackBar: MatSnackBar, public Router: Router,
     public db:AngularFirestore,
     public afAuth:AngularFireAuth,
     public user:UsersService,
-    // public db:AngularFireDatabase
     ) { 
-      // this.texts = db.collection('text').valueChanges();
     }
 
   isSignUp = true;
@@ -80,10 +75,5 @@ export class LogInDialogComponent implements OnInit {
       this.Router.navigate(['game-play'])
     })
   }
-
-  // onSubmit(){
-  //   this.db.collection('text').doc(this.textValue);
-  //   this.textValue = '';
-  // }
 }
 
