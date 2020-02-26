@@ -13,14 +13,14 @@
 
         </div>
         <div class="inputform">
-            <form id="lobbyChatForm" action="">
-                <input id="lobbyChatInput" autocomplete="off" maxlength="280" placeholder="Type here" >
-            </form>
+           
+                <input id="lobbyChatInput" autocomplete="off" maxlength="280" placeholder="Type here" [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()">
+     
 
             <div class="iconsend">
 
 
-                <button mat-icon-button aria-label="Example icon-button with a heart icon">
+                <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="sendMessage()">
                     <mat-icon>send</mat-icon> </button>
 
             </div>

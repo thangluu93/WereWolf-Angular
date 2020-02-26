@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { SocketioService } from "./../../services/socketIo/socket-io.service";
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: "app-chat-box",
@@ -15,17 +16,19 @@ export class ChatBoxComponent implements OnInit {
   _RecoverMessagesFlag = false;
   _RecoverMessagesSubcription
 
-  constructor(private SocketioService: SocketioService) {
+  constructor(private SocketioService: SocketioService, private UsersService:UsersService) {
    }
 
   sendMessage() {
     if (this.newMessage != undefined) {
       console.log(this.newMessage + "does it run");
       this.SocketioService.sendData({
-        name: this.name,
+        name: this.UsersService.user.name,
         message: this.newMessage
       });
     } this.newMessage = undefined;
+    console.log(this.UsersService.user.name+'name');
+    
   }
 
   ngOnInit() {

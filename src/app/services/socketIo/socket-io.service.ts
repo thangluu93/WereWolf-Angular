@@ -40,7 +40,7 @@ export class SocketioService {
   public setUpRecover() {
     this.socket.on('reconnect', (socket) => {
       {
-        this.socket.on("roomRecover", data => {
+          socket.on("roomRecover", data => {
           this.recoverMess.next(data)
         });
       }
