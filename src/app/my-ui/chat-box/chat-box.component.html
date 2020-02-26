@@ -1,0 +1,33 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened style="background-color: blanchedalmond;width: 20%;">
+        <div class="messcontent">
+
+            <div *ngIf="_RecoverMessagesFlag">
+                <div id="outputArea" *ngFor="let messageList of messageListsRocover">
+                  {{messageList.name}} : {{messageList.message}}
+                  </div>
+              </div>
+              <div id="outputArea" *ngFor="let messageList of messageLists">
+                  {{messageList.name}} : {{messageList.message}}
+              </div>
+
+        </div>
+        <div class="inputform">
+           
+                <input id="lobbyChatInput" autocomplete="off" maxlength="280" placeholder="Type here" [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()">
+     
+
+            <div class="iconsend">
+
+
+                <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="sendMessage()">
+                    <mat-icon>send</mat-icon> </button>
+
+            </div>
+
+        </div>
+    </mat-drawer>
+    <mat-drawer-content style="background-color: black;">
+        <app-playing-fiel></app-playing-fiel>
+    </mat-drawer-content>
+</mat-drawer-container>

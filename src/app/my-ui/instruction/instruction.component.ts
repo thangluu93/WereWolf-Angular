@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instruction.component.scss']
 })
 export class InstructionComponent implements OnInit {
-  panelOpenState = false;
 
   constructor() { }
   

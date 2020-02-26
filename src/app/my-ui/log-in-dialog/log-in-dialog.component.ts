@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators, FormControlName,FormGroupDirective } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
-
-import {ErrorStateMatcher} from '@angular/material/core';
-
+import { UsersService } from 'src/app/services/users.service';
+import {  AngularFireAuth} from '@angular/fire/auth'
+import { AngularFirestore } from '@angular/fire/firestore';
+import {auth} from 'firebase';
+// import { Observable } from 'rxjs'
+// import { AngularFireDatabase } from '@angular/fire/database'
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -12,21 +16,33 @@ import {ErrorStateMatcher} from '@angular/material/core';
 })
 export class LogInDialogComponent implements OnInit {
 
-  constructor(public Router:Router) { }
+  // textValue = '';
+  // texts : Observable <any[]>;
 
-  isLogin=true;
+  constructor(public snackBar: MatSnackBar, public Router: Router,
+    public db:AngularFirestore,
+    public afAuth:AngularFireAuth,
+    public user:UsersService,
+    // public db:AngularFireDatabase
+    ) { 
+      // this.texts = db.collection('text').valueChanges();
+    }
+
+  isSignUp = true;
+  isLogIn = true;
+
+  email = new FormControl('', [Validators.required, Validators.email]);
+  password = new FormControl('', [Validators.required, Validators.minLength(8)]);
+  retypePassword = new FormControl('', [Validators.required, Validators.pattern(this.password.value)]);
 
   ngOnInit(): void {
   }
 
 
-
-  email=new FormControl('',[Validators.required,Validators.email]);
-  password=new FormControl('',[Validators.required,Validators.minLength(8)]);
-  retypePassword=new FormControl('',[Validators.required,Validators.pattern(this.email.value)]);
-
-  changTab(i){
-    this.isLogin=i==0;
+  getErrorMessage() {
+    return this.email.hasError('required') ? 'You must enter a value' :
+        this.email.hasError('email') ? 'Not a valid email' :
+            '';
   }
 
   getPasswordError(){
@@ -36,16 +52,39 @@ export class LogInDialogComponent implements OnInit {
       
   }
 
-  getEmailError(){
-    return this.email.hasError('required')?"You must enter your email":
-      this.email.hasError('email')?"You must enter your email correctly":"";
+  getRetypePasswordError() {
+    return this.retypePassword.hasError('required') ? 'You must enter a password' :
+        this.retypePassword.hasError('pattern') ? 'You must retype exactly' :
+          '';
   }
 
-  getRetypePasswordError(){
-
-    return this.retypePassword.hasError('required')?"You must retype your password":
-      this.retypePassword.hasError('pattern')?'You must retype your password correctly':'';
-
+  signUp() {
+    if (this.email.value == 0) {
+      this.snackBar.open('Please Input Infomation','OK', {duration: 2000});
+    }
+    if (this.password.value !== this.retypePassword.value) {
+      this.snackBar.open('Retyped password does not match!!', 'OK', {duration: 2000});
+      return;
+    }
+  }
+  LogIn(){
+    this.afAuth.auth.signInWithEmailAndPassword(this.email.value,this.password.value).then(() => {
+      this.snackBar.open('Success' , 'OK', {duration : 2000});
+    }).catch((err) => {
+      this.snackBar.open(err, 'OK',{duration: 2000});
+    });
   }
 
+
+  async loginwithGG(){
+    await this.user.logingg().then(() =>{
+      this.Router.navigate(['game-play'])
+    })
+  }
+
+  // onSubmit(){
+  //   this.db.collection('text').doc(this.textValue);
+  //   this.textValue = '';
+  // }
 }
+
