@@ -1,84 +1,13 @@
-.main {
-    width: 900px;
-    height: 700px;
-    padding-top: 5%;
-    position: absolute;
-}
-
-.exitbutton {
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.table {
-    background-color: brown;
-    left: 20%;
-    height: 50%;
-    width: 80%;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 1em solid black;
-    position: absolute;
-}
-
-.seat {
-    text-align: center;
+.formchatcss {
     color: red;
-    background-color: black;
-}
-
-#seat0 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: -7%;
-    top: 36%;
-    position: absolute;
-}
-
-#seat1 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 90%;
-    top: 36%;
-    position: absolute;
-}
-
-#seat2 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 19%;
-    top: -12%;
-    position: absolute;
-}
-
-#seat3 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 19%;
-    top: 80%;
-    position: absolute;
-}
-
-#seat4 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 60%;
-    top: 80%;
-    position: absolute;
-}
-
-#seat5 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 60%;
-    top: -12%;
-    position: absolute;
+    width: 200px;
+    border: 2px solid black;
+    padding-left: 5px;
+    background-color: inherit;
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    outline: none;
 }
 
 .example-container {
@@ -103,12 +32,6 @@
     margin-top: 20px;
 }
 
-.game-play {
-    width: 80%;
-    height: 200%;
-    z-index: 1;
-}
-
 .inputform {
     display: flex;
     flex-direction: row;
@@ -121,46 +44,4 @@
     margin-top: 8px;
     color: navy;
     border: none;
-}
-
-
-/* width */
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-
-/* Track */
-
- ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-
-/* Handle */
-
- ::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-
-/* Handle on hover */
-
- ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.example-spacer {
-    flex: 1 1 auto;
-}
-
-.gametime {
-    height: 30px;
-    width: 200px;
-    color: white;
-    border-left: 4px solid #020202;
-    border-right: 4px solid #020202;
-    border-bottom: 4px solid #020202;
-    border-top: 4px solid #020202;
 }
