@@ -16,7 +16,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    
     // Router,
   ],
 })
