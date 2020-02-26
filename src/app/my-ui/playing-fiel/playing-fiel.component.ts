@@ -12,5 +12,6 @@ export class PlayingFielComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
+
