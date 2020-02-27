@@ -1,8 +1,8 @@
 .main {
     width: 900px;
-    height: 700px;
+    height: 600px;
     padding-top: 5%;
-    position: absolute;
+    position: fixed;
 }
 
 .exitbutton {
@@ -40,8 +40,8 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    left: 90%;
-    top: 36%;
+    left: 19%;
+    top: -12%;
     position: absolute;
 }
 
@@ -49,7 +49,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    left: 19%;
+    left: 60%;
     top: -12%;
     position: absolute;
 }
@@ -58,8 +58,8 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    left: 19%;
-    top: 80%;
+    left: 90%;
+    top: 36%;
     position: absolute;
 }
 
@@ -76,8 +76,8 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    left: 60%;
-    top: -12%;
+    left: 19%;
+    top: 80%;
     position: absolute;
 }
 
@@ -90,37 +90,13 @@
     border-right: 2px solid #020202;
     border-bottom: 2px solid #020202;
     height: 100%;
-}
-
-.messcontent {
-    width: 85%;
-    height: 75%;
-    border-left: 5px solid #020202;
-    border-right: 5px solid #020202;
-    border-bottom: 5px solid #020202;
-    border-top: 5px solid #020202;
-    margin-left: 10px;
-    margin-top: 20px;
+    position: fixed;
 }
 
 .game-play {
     width: 80%;
     height: 200%;
     z-index: 1;
-}
-
-.inputform {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    align-items: center;
-}
-
-.iconsend {
-    background-color: blanchedalmond;
-    margin-top: 8px;
-    color: navy;
-    border: none;
 }
 
 
