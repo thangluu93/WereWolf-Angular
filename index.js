@@ -27,4 +27,4 @@ http.listen(3000, () => {
 
 	socket.on('vote', function (data) {
 		game.vote(socket, data);
-	});
+	}); //asdasdasd
