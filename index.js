@@ -1,7 +1,7 @@
 const app = require("express")();
 const http = require("http").createServer(app);
 const io = require("socket.io")(http);
-
+let roleArray=string []=[]
 // array=[wolf,seer,villager,witch,hunter,bodyguard]
 
 app.get('/', (req, res) => {
@@ -25,3 +25,6 @@ http.listen(3000, () => {
 
 // shuffle(arr);
 
+	socket.on('vote', function (data) {
+		game.vote(socket, data);
+	});
