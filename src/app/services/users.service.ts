@@ -7,7 +7,7 @@ import { auth} from 'firebase'
 })
 export class UsersService {
   
-  user:User = {
+  public user:User = {
     email:'',
     name:'',
     photoURL:'',
