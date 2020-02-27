@@ -1,18 +1,28 @@
-.example-form {
+ .example-form {
     min-width: 150px;
     max-width: 500px;
     width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-    min-width: 150px;
-    max-width: 500px;
-    margin-top: 10px;
-  }
-  .example-button-row button {
+}
+
+.example-full-width {
     width: 100%;
     min-width: 150px;
     max-width: 500px;
     margin-top: 10px;
-  }
+}
+
+.example-button-row button {
+    width: 100%;
+    min-width: 150px;
+    max-width: 300px;
+    margin-top: 10px;
+    border: 2px 2px 2px 2px;
+    border-radius: 5px;
+    color: #444;
+    margin-left: 20px;
+    box-shadow: 10px 10px 10px;
+    -moz-box-shadow: 10px 10px 10px;
+    -webkit-box-shadow: 10px 10px 10px;
+    -o-box-shadow: 10px 10px 10px;
+    -ms-box-shadow: 10px 10px 10px;
+}

@@ -5,8 +5,8 @@
 }
 
 .iconChange {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     transition: 0.5s;
 }
 
@@ -43,6 +43,7 @@
     transition: 1.5s;
     scroll-behavior: smooth;
     z-index: 2;
+    background-image: url(https://media0.giphy.com/media/b8AIy2HJzPog8/giphy.gif);
 }
 
 .spacer {
@@ -61,6 +62,7 @@ button {
 .AccountButton {
     background-color: red;
     scroll-behavior: smooth;
+    width: 50px;
 }
 
 .AccountButton:hover {
@@ -124,3 +126,13 @@ a:hover {
 //     height: 100%;
 //     width: 75%;
 // }
+.iconhomepage {
+    margin-top: 24px;
+    height: 136px;
+    width: 134px;
+    fill: gray;
+}
+
+.material-icons {
+    margin-top: 10px;
+}
