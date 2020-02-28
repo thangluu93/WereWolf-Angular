@@ -15,6 +15,7 @@ export const witch = {
     role: 'witch',
     canChat: 'true',
     canKill: 'true',
+    canVote: 'true',
     canSave: 'true',
 }
 export const bodyguard = {
@@ -33,4 +34,30 @@ export const villager = {
     role: 'villager',
     canChat: 'true',
     canVote: 'true',
+}
+
+export const Deathman = {
+    role: 'Deathman',
+    canChat: 'false',
+    canVote: 'false',
+    canKill: 'false',
+    canSeeRole: 'false',
+    canSave: 'false',
+    canShoot: 'false',
+}
+export const Sleep = {
+    role: 'Sleep',
+    canChat: 'false',
+    canVote: 'false',
+
+}
+
+// if user click to choose someone then send the information to Server
+
+export const Voting = {
+
+}
+
+export const showRole = {
+    
 }
