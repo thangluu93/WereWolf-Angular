@@ -22,7 +22,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ChatBoxComponent } from './chat-box/chat-box.component';
 import { PlayingFielComponent } from './playing-fiel/playing-fiel.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
-
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -49,6 +49,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatIconModule,
     MatSnackBarModule,
     MatSidenavModule,
+    MatCardModule
 
   ],
   entryComponents:[

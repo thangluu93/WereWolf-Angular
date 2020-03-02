@@ -1,90 +1,52 @@
-    // .example-container {
-    //     width: 200px;
-    //     margin: 10px;
-    //     border: 1px solid #555;
-    //     width: 100%;
-    //     border-left: 2px solid #020202;
-    //     border-right: 2px solid #020202;
-    //     border-bottom: 2px solid #020202;
-    //     height: 100%;
-    // }
-    // .chatboxtitle {
-    //     border: 1px solid #555;
-    //     border-left: 2px solid #020202;
-    //     border-right: 2px solid #020202;
-    //     border-bottom: 2px solid #020202;
-    //     border-top: 2px solid #020202;
-    //     margin-top: 5px;
-    //     margin-left: 5px;
-    //     margin-right: 5px;
-    //     margin-bottom: 2px;
-    // }
-    // .messcontent {
-    //     width: 85%;
-    //     height: 75%;
-    //     border-left: 2px solid #020202;
-    //     border-right: 2px solid #020202;
-    //     border-bottom: 2px solid #020202;
-    //     border-top: 2px solid #020202;
-    //     margin-left: 10px;
-    // }
-    // .game-play {
-    //     width: 80%;
-    //     height: 200%;
-    //     z-index: 1;
-    // }
-    // #new-game {
-    //     text-align: center;
-    //     left: 50%;
-    //     top: 50%;
-    //     color: red;
-    // }
-    // .button-game-play {
-    //     flex-direction: column;
-    //     margin-top: 30%;
-    //     margin-left: 0%;
-    // }
-    // #new-game-button {
-    //     width: 200px;
-    //     height: 200px;
-    //     font-size: 25px;
-    // }
-    // .inputform {
-    //     display: flex;
-    //     flex-direction: row;
-    //     padding-left: 10px;
-    //     align-items: center;
-    // }
-    // .iconsend {
-    //     background-color: blanchedalmond;
-    //     margin-top: 8px;
-    //     color: navy;
-    //     border: none;
-    // }
-    .gameplaycss {
-        width: 90%;
-        height: 90%;
-        border-left: 5px solid #FF0000;
-        border-right: 5px solid #FFFF66;
-        border-bottom: 5px solid #FF99CC;
-        border-top: 5px solid #0000DD;
-        margin-left: 4%;
-        margin-top: 0.99%;
-        background-color: black;
-    }
-    
-    .buttongameplay {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .buttonposition {
-        margin-left: 40%;
-        margin-top: 10%;
-    }
-    
-    .fullscreen {
-        width: 100%;
-        height: 100%;
-        background-image: url(https://i.pinimg.com/originals/ce/2b/78/ce2b78a05838ef311c0868bb2fca0494.gif);
-    }
+.playBox{
+    width: 700px;
+    height: 350px;
+    margin-top: 20px;
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oxanium', ;
+}
+h1{
+    font-family: 'Trade Winds', ;
+}
+.Header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trade Winds', ;
+}
+.welcomePage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    color: white;
+    background-color: lightslategrey;
+    width: 100%;
+    height: 100%;
+    font-family: 'Oxanium', ;
+    background-image: url("http://images-eds.xboxlive.com/image?url=z951ykn43p4FqWbbFvR2Ec.8vbDhj8G2Xe7JngaTToCmRGxSzf8J4zt6ifvNWlovSX_YCMWU9mV1NBXrX3IYexni6BCA6UYz4mRdGIj15OT8PUyFLaA0QnRd_ykYiizHgpyMNrT.74pTWrHw1IqMShh2y2PzYfBJHHiX3EiHYB32LL36lM2fZ2wOU5O.kf6u");
+    background-size: cover;
+}
+button{
+    height: 100px;
+    width: 200px;
+    font-family: 'Oxanium', ;
+    background-color: blueviolet;
+    border: none;
+    font-size: 40px;
+    margin-top: 20px;
+}
+button:hover{
+    opacity: 0.6;
+    transition: 1.5s;
+    color: white;
+    font-family: 'Oxanium', ;
+}

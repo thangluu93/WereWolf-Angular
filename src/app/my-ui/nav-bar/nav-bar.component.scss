@@ -1,24 +1,24 @@
-.icon {
-    width: 70px;
-    height: 70px;
+.iconhomepage {
+    width: 50px;
+    height: 50px;
     transition: 0.5s;
 }
 
 .iconChange {
-    width: 200px;
-    height: 200px;
+    width: 40px;
+    height: 40px;
     transition: 0.5s;
 }
 
 .title {
-    font-family: 'Lemonada', cursive;
+    font-family: 'Trade Winds', ;
     font-size: 50px;
     color: white;
     transition: 0.5s;
 }
 
 .titleChange {
-    font-family: 'Lemonada', cursive;
+    font-family: 'Trade Winds', ;
     font-size: 30px;
     color: white;
     transition: 0.5s;
@@ -43,7 +43,6 @@
     transition: 1.5s;
     scroll-behavior: smooth;
     z-index: 2;
-    background-image: url(https://media0.giphy.com/media/b8AIy2HJzPog8/giphy.gif);
 }
 
 .spacer {
@@ -51,36 +50,21 @@
 }
 
 button {
+    height: 200px;
     font-size: 15px;
     font-weight: 800;
     color: whitesmoke;
     height: 50px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oxanium', ;
     flex: auto;
 }
 
-.AccountButton {
-    background-color: red;
-    scroll-behavior: smooth;
-    width: 50px;
-}
-
-.AccountButton:hover {
-    background: repeating-linear-gradient( to right, rgba(255, 174, 0, 0.788), rgb(255, 208, 0));
-    color: white;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
-}
-
 .InstructionButton:hover {
-    color: red;
+    color: blueviolet;
 }
 
 .ConstactButton:hover {
-    color: red;
+    color: blueviolet;
 }
 
 a {
@@ -89,50 +73,13 @@ a {
 }
 
 a:hover {
-    color: red;
-}
-
-#account {
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 10px;
-    background-color: transparent;
-    border: none
-}
-
-#account:hover {
-    color: red;
-}
-
-#avatar {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 5px;
-}
-
-#avatar:hover {
-    color: red;
+    color: blueviolet;
 }
 
 .spacer {
     flex: 1 1 auto;
 }
-
-// #BackGround {
-//     height: 100%;
-//     width: 75%;
-// }
-.iconhomepage {
-    margin-top: 24px;
-    height: 136px;
-    width: 134px;
-    fill: gray;
-}
-
-.material-icons {
-    margin-top: 10px;
+.material-icons{
+    text-align: center;
+    width: 50px;
 }
