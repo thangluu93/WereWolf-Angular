@@ -22,25 +22,23 @@ export class SocketioService {
     });
   }
 
-  public sendData(data) {
-    this.socket.emit("send", data);
+  public sendData(roomId, data) {
+    this.socket.emit(roomId, data);
   }
 
 
-  public getData = () => {
+  public getData = (roomId) => {
     return Observable.create(observer => {
-      this.socket.on("my broadcast", data => {
+      this.socket.on(roomId, data => {
         observer.next(data);
-        // console.log(data);
-
       });
     });
   };
 
-  public setUpRecover() {
+  public setUpRecover(roomId) {
     this.socket.on('reconnect', (socket) => {
       {
-          socket.on("roomRecover", data => {
+          socket.on(roomId, data => {
           this.recoverMess.next(data)
         });
       }

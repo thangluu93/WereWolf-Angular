@@ -21,7 +21,7 @@ export class ChatBoxComponent implements OnInit {
 
   sendMessage() {
     if (this.newMessage != undefined) {
-      console.log(this.newMessage + "does it run");
+
       this.SocketioService.sendData({
         name: this.UsersService.user.name,
         message: this.newMessage
