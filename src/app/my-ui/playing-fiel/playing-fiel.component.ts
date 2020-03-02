@@ -28,11 +28,23 @@ export class PlayingFielComponent implements OnInit {
     // this.user.uid='XXXX';
     // console.log(this.user.email);
     // console.log(this.user.uid);
-    console.log(this.user.role['canKill']);
-    console.log(this.user.role['canChat']);
-    console.log(this.user.role['canVote']);
-    console.log(this.user.role['canSave']);
+      console.log(this.user.role['canKill']);
+      console.log(this.user.role['canChat']);
+      console.log(this.user.role['canVote']);
+      console.log(this.user.role['canSave']);
     }
+    else {
+      return this.user.role=CharRole.villager;
+    }
+
+
+    if (this.user.role=CharRole.wolf){
+      console.log(this.user.role['canKill']);
+      console.log(this.user.role['canChat']);
+      console.log(this.user.role['canVote']);
+    }
+    else
+    return this.user.role=CharRole.villager;
   }
 
   // public  InitUser(){

@@ -1,63 +1,16 @@
-<!-- <div style="background-color: black;height: 100%;">
-    <mat-drawer-container class="example-container">
-        <mat-drawer mode="side" opened style="background-color: blanchedalmond;width: 20%;">
-
-            <div class="chatboxtitle">
-                <h1 style="text-align: center; margin-top: 10px;">
-                    CHAT BOX
-                </h1>
-            </div>
-
-            <div class="messcontent">
-
-                <P>
-                    mess user text here!!
-                </P>
-
-            </div>
-            <div class="inputform">
-                <form id="lobbyChatForm" action=""><input id="lobbyChatInput" autocomplete="off" maxlength="280" placeholder="Type here" style="color:red; width:200px; border:2px solid black; padding-left:5px; background-color:inherit;display:block;margin-top:10px;height:30px;outline:none;">
-                </form>
-
-                <div class="iconsend">
-
-
-                    <button mat-icon-button aria-label="Example icon-button with a heart icon">
-                        <mat-icon>send</mat-icon> </button>
-
-                </div>
-
-            </div>
-
-        </mat-drawer>
-
-        <mat-drawer-content id="game-play" class="game-play" style="z-index: 1;background: #212121; background-repeat: no-repeat;background-size: cover;height: 100%;">
-
-            <mat-toolbar-row class="button-game-play">
-
-                <button mat-fab color="primary" id="new-game-button" (click)="Router.navigate(['playing'])">New Game</button>
-
-            </mat-toolbar-row>
-        </mat-drawer-content>
-
-    </mat-drawer-container>
-</div> -->
-
-
-<div class="fullscreen">
-    <div class="gameplaycss">
-
-        <div>
-
-
-
-        </div>
-
-        <div class="buttonposition">
-
-            <button mat-fab color="accent" class="buttongameplay" (click)="Router.navigate(['playing'])"> Enter New Game</button>
-
-        </div>
-
+<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+<div class="welcomePage">
+    <div class="Header">
+        <h1 style="font-size: 50px;" >Werewolf</h1> 
+            Online
+    </div>
+    <div class="playBox">
+        <h1>Welcome To Werewolf Online</h1>
+        <p>Please read the instruction before you play</p>
+        <p>Press play when you ready</p>
+        <button (click)="onCreateLobby()" >Create Lobby</button>
+        <input [(ngModel)]="lobbyId" type="text">
+        <button (click)="onJoin()" >Join</button>
     </div>
 </div>

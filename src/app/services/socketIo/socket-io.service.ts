@@ -15,7 +15,16 @@ export class SocketioService {
   // data;
 
   constructor() {
-  }
+
+
+
+
+
+
+
+
+
+   }
   setupSocketConnection() {
     this.socket = io(environment.SOCKET_ENDPOINT, function (socket) {
 

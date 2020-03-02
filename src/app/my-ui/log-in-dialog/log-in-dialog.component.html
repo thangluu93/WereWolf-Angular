@@ -1,7 +1,8 @@
-<mat-tab-group mat-align-tabs="center" id="login">
+<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+<mat-tab-group mat-align-tabs="center" >
     <!-- Log In -->
 
-    <mat-tab label="Log In" id="login">
+    <mat-tab label="Log In" >
         <form class="example-form" style="height: 350px;">
             <!-- Input Email -->
             <mat-form-field class="example-full-width">
@@ -16,13 +17,9 @@
                 <mat-error *ngIf="password.invalid">{{getPasswordError()}}</mat-error>
             </mat-form-field>
             <!-- Log In Button -->
-            <div class="example-button-row">
+            <div class="example-button-row" style="text-align: center;">
                 <button mat-raised-button color="primary" *ngIf="isLogIn" (click)="LogIn()">Log In</button>
-                <!-- <button mat-raised-button (click)="loginwithGG()" >Login With Google</button> -->
-                <div class="example-button-row">
-                    <!-- <span class="buttonText" (click)="loginwithGG()"> <img src="https://developers-dot-devsite-v2-prod.appspot.com/identity/sign-in/g-normal.png" alt="ad">Sign in with Google</span> -->
-                    <button mat-raised-button color="basic" (click)="loginwithGG()"><img src="https://developers-dot-devsite-v2-prod.appspot.com/identity/sign-in/g-normal.png" alt="ad">Sign in with Google</button>
-                </div>
+                <button mat-raised-button color="basic" (click)="loginwithGG()"><img src="https://developers-dot-devsite-v2-prod.appspot.com/identity/sign-in/g-normal.png" alt="ad">Sign in with Google</button>
             </div>
         </form>
     </mat-tab>
@@ -50,10 +47,9 @@
                 <mat-error *ngIf="retypePassword.invalid ">{{getRetypePasswordError()}}</mat-error>
             </mat-form-field>
             <!--Sign Up Button -->
-            <div class="example-button-row ">
-                <button mat-raised-button color="primary " *ngIf="isSignUp " (click)="signUp() ">Sign Up</button>
+            <div class="example-button-row" style="text-align: center;" >
+            <button mat-raised-button color="primary" *ngIf="isSignUp" (click)="signUp()"> Sign Up</button>
             </div>
         </form>
     </mat-tab>
-    <button mat-raised-button (click)="Router.navigate([ 'game-play']) "> as guest</button>
 </mat-tab-group>
