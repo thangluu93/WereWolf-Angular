@@ -14,17 +14,7 @@ export class SocketioService {
 
   // data;
 
-  constructor() {
-
-
-
-
-
-
-
-
-
-   }
+  constructor() {}
   setupSocketConnection() {
     this.socket = io(environment.SOCKET_ENDPOINT, function (socket) {
 
@@ -36,9 +26,10 @@ export class SocketioService {
   }
 
 
-  public getData = (roomId) => {
+  public getData(roomId):Observable<any>{
     return Observable.create(observer => {
       this.socket.on(roomId, data => {
+        console.log(data);
         observer.next(data);
       });
     });

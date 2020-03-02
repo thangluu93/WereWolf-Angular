@@ -16,6 +16,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { AngularFireAuthModule} from '@angular/fire/auth'
 import { AngularFireStorageModule} from '@angular/fire/storage'
 import { environment } from 'src/environments/environment';
+import { FormsModule } from '@angular/forms';
 ;
 
 
@@ -30,6 +31,7 @@ import { environment } from 'src/environments/environment';
     BrowserAnimationsModule,
     RouterModule,
     MyUiModule,
+    FormsModule,
 
     // Firebaselib
     AngularFireModule.initializeApp(environment.firebase),

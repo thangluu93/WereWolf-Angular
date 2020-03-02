@@ -52,7 +52,7 @@ export class UsersService {
   }
 
   sendUserData(){
-    this.socketIo.sendData(this.uid);
+    this.socketIo.sendData("users",this.uid);
   }
 }
 
