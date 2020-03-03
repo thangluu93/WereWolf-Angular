@@ -24,7 +24,13 @@ export class UsersService {
     public afAuth: AngularFireAuth,
     public socketIo: SocketioService
 
-  ) { }
+  ) { 
+    this.afAuth.authState.subscribe(user => {
+      this.user.email = user.email;
+      this.user.name=user.displayName;
+      this.user.photoURL=user.photoURL;
+    })
+  }
 
   async loginWithGoogle() {
     return new Promise<any>((resolve, reject) => {
