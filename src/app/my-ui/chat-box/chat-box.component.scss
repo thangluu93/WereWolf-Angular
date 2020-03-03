@@ -1,41 +1,34 @@
 .example-container {
-    width: 100px;
-    border: 1px solid #555;
     width: 100%;
     height: 100%;
 }
 
 .messcontent {
-    width: 90%;
-    height: 75%;
-    border-left: 5px solid #020202;
-    border-right: 5px solid #020202;
-    border-bottom: 5px solid #020202;
-    border-top: 5px solid #020202;
-    margin-left: 10px;
-    margin-top: 10px;
+
+    width: 98%;
+    height: 80%;
+    border-left: 2px solid #020202;
+    border-right: 2px solid #020202;
+    border-bottom: 2px solid #020202;
+    border-top: 2px solid #020202;
+    font-family: 'Oxanium', ;
+    
 }
 .inputform {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
     align-items: center;
-    margin-left: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-family: 'Oxanium', ;
 }
 #lobbyChatInput{
     width: 85%;
     height: 30px;
     font-size: 20px;
 }
-
-.iconsend {
-    background-color: blanchedalmond;
-    margin-top: 8px;
-    color: navy;
-    border: none;
-    display: flex;
-}
-
 .fullcreen1 {
     width: 100%;
     height: 100%;
@@ -58,14 +51,41 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    height: 33%;
+    width: 100%;
 }
 .Middle{
-    margin-top: 40px;
+    // margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
+    height: 33%;
+}
+.Bottom{
+    // margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 33%;
+}
+.Exit{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-family: 'Oxanium', ;
+    margin-top: 10px ;
+    width: auto;
+    height: 50px;
+}
+button{
+    font-family: 'Oxanium', ;
+    font-size: 20px;
+}
+input{
+    font-family: 'Oxanium', ;
 }

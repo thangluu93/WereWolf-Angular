@@ -37,4 +37,11 @@ export class GamePlayComponent implements OnInit {
     });
   }
   lobbyId ="";
+  // onCreateLobby() {
+
+  // }
+  // onJoin(){
+
+  // }
+  // lobbyId ="";
 }
