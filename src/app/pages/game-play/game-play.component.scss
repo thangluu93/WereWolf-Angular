@@ -1,6 +1,6 @@
 .playBox{
     width: 700px;
-    height: 350px;
+    height: 400px;
     margin-top: 20px;
     background-color: #1F1F1F;
     display: flex;
@@ -36,17 +36,24 @@ h1{
     background-size: cover;
 }
 button{
-    height: 100px;
-    width: 200px;
+    height: 80px;
+    width: 250px;
     font-family: 'Oxanium', ;
     background-color: blueviolet;
     border: none;
-    font-size: 40px;
-    margin-top: 20px;
+    font-size: 25px;
+    margin-top: 10px;
 }
 button:hover{
     opacity: 0.6;
     transition: 1.5s;
     color: white;
     font-family: 'Oxanium', ;
+}
+input{
+    margin-top: 10px;
+    width: 250px;
+    height: 30px;
+    font-family: 'Oxanium', ;
+    font-size: 20px ;
 }

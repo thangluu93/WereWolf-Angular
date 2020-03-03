@@ -14,11 +14,11 @@ export class GamePlayComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  onCreateLobby() {
+  // onCreateLobby() {
 
-  }
-  onJoin(){
+  // }
+  // onJoin(){
 
-  }
-  lobbyId ="";
+  // }
+  // lobbyId ="";
 }
