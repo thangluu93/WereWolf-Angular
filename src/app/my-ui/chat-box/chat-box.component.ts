@@ -42,7 +42,7 @@ export class ChatBoxComponent implements OnInit {
       console.log(this.messageLists);
     });
 
-    this._RecoverMessagesSubcription=this.SocketioService.getDataFormRecoverofRoom().subscribe(data => {
+    this._RecoverMessagesSubcription=this.SocketioService.getDataFormRecoverofRoom().then(data => {
       if (this._RecoverMessagesFlag && (this._RecoverMessagesFlag=true)) {
         this._RecoverMessagesSubcription.unsubscribe();
       }

@@ -5,7 +5,6 @@ import { auth } from 'firebase';
 import { SocketioService } from './socketIo/socket-io.service'
 import * as firebase from 'firebase/app'
 import { ResolveEnd } from '@angular/router';
-import { resolve } from 'dns';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +30,6 @@ export class UsersService {
     return new Promise<any>((resolve, reject) => {
       let provider = new auth.GoogleAuthProvider();
       this.afAuth.auth.signInWithPopup(provider).then((u) => {
-        console.log(u.user);
         this.uid = u.user.uid;
         this.user.email = u.user.email;
         this.user.name = u.user.displayName;
@@ -43,19 +41,7 @@ export class UsersService {
     })
   }
 
-  doFacebookLogin() {
-    return new Promise<any>((resolve, reject) => {
-      let provider = new firebase.auth.FacebookAuthProvider();
-      this.afAuth.auth
-        .signInWithPopup(provider)
-        .then(res => {
-          resolve(res);
-        }, err => {
-          console.log(err);
-          reject(err);
-        })
-    })
-  }
+    
 
 
   checkUser(uid: string): boolean {

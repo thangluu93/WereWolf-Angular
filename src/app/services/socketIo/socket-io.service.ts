@@ -45,8 +45,8 @@ export class SocketioService {
     })
   }
 
-  public getDataFormRecoverofRoom(): Observable<any> {
-    return this.recoverMess.asObservable();
+  public async getDataFormRecoverofRoom(): Promise<any> {
+    return await this.recoverMess.asObservable();
   };
 };
 
