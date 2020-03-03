@@ -1,142 +1,92 @@
-.formchatcss {
-    color: red;
-    width: 200px;
-    border: 2px solid black;
-    padding-left: 5px;
-    background-color: inherit;
-    display: block;
-    margin-top: 10px;
-    height: 30px;
-    outline: none;
-}
-
-.main {
-    width: 900px;
-    height: 700px;
-    padding-top: 5%;
-    position: absolute;
-}
-
-.exitbutton {
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.table {
-    background-color: brown;
-    left: 20%;
-    height: 50%;
-    width: 80%;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 1em solid black;
-    position: absolute;
-}
-
-.seat {
-    text-align: center;
-    color: red;
-    background-color: black;
-}
-
-#seat0 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: -7%;
-    top: 36%;
-    position: absolute;
-}
-
-#seat1 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 90%;
-    top: 36%;
-    position: absolute;
-}
-
-#seat2 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 19%;
-    top: -12%;
-    position: absolute;
-}
-
-#seat3 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 19%;
-    top: 80%;
-    position: absolute;
-}
-
-#seat4 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 60%;
-    top: 80%;
-    position: absolute;
-}
-
-#seat5 {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    left: 60%;
-    top: -12%;
-    position: absolute;
-}
-
-.example-container {
-    width: 200px;
-    margin: 10px;
-    border: 1px solid #555;
-    width: 100%;
-    border-left: 2px solid #020202;
-    border-right: 2px solid #020202;
-    border-bottom: 2px solid #020202;
-    height: 100%;
-}
-
-.messcontent {
-    width: 85%;
-    height: 75%;
-    border-left: 5px solid #020202;
-    border-right: 5px solid #020202;
-    border-bottom: 5px solid #020202;
-    border-top: 5px solid #020202;
-    margin-left: 10px;
-    margin-top: 20px;
-}
-
-.game-play {
-    width: 80%;
-    height: 200%;
-    z-index: 1;
-}
-
-.inputform {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    align-items: center;
-}
-
-.iconsend {
-    background-color: blanchedalmond;
-    margin-top: 8px;
-    color: navy;
-    border: none;
-}
-
-.fullcreen1 {
-    width: 100%;
-    height: 100%;
-    background-image: url(https://i.pinimg.com/originals/ce/2b/78/ce2b78a05838ef311c0868bb2fca0494.gif);
-}
+    .messcontent {
+        width: 80%;
+        height: 75%;
+        border-left: 5px solid #020202;
+        border-right: 5px solid #020202;
+        border-bottom: 5px solid #020202;
+        border-top: 5px solid #020202;
+        margin-left: 5%;
+        margin-top: 20px;
+        border-radius: 10%;
+    }
+    
+    .inputform {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        align-items: center;
+    }
+    
+    .iconsend {
+        background-color: blanchedalmond;
+        margin-top: 8px;
+        color: navy;
+        border: none;
+    }
+    
+    .playingpage {
+        width: 98vw;
+        height: 100vh;
+        display: flex;
+    }
+    
+    .chatboxcss {
+        width: 25vw;
+        height: 100%;
+        border-left: 5px solid #020202;
+        border-right: 5px solid #020202;
+        border-bottom: 5px solid #020202;
+        border-top: 5px solid #020202;
+        border-radius: 10%;
+    }
+    
+    .playingcss {
+        height: 100vh;
+        width: 75vw;
+        min-width: 40%;
+        border-left: 5px solid #020202;
+        border-right: 5px solid #020202;
+        border-bottom: 5px solid #020202;
+        border-top: 5px solid #020202;
+        border-radius: 10%;
+    }
+    
+    .inputchat {
+        width: 80%;
+        min-width: 40%;
+        height: 50%;
+    }
+    
+    .inputform {
+        padding-top: 10%;
+    }
+    
+    .example-form {
+        min-width: 20%;
+        max-width: 90%;
+        width: 100%;
+    }
+    
+    .example-full-width {
+        width: 90%;
+    }
+    
+    .imgcss {
+        width: 200px;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: image();
+    }
+    
+    .tablecss {
+        img {
+            height: 100%;
+            width: 100%;
+            max-width: 600px;
+            min-width: 200px;
+            margin-left: 25%;
+            margin-top: 15%;
+        }
+    }
