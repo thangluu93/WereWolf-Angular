@@ -19,8 +19,9 @@ export class GameService{
       else if(event == Events.sendRoomStatus){
         this?.onSendRoomStatus(data);
       }
-      // else if(event==Events.
-      //   )
+      else if(event==Events.dayStatus){
+
+      }
     });
   }
   public onJoiningRoom:(data)=>void;

@@ -19,7 +19,7 @@ export class GamePlayComponent implements OnInit {
 
   ngOnInit(): void {
     this.game.onSendRoomStatus = function(data){
-      console.log(data);
+      // console.log(data);
     };
   }
   async onCreateLobby() {
@@ -37,4 +37,11 @@ export class GamePlayComponent implements OnInit {
     });
   }
   lobbyId ="";
+  // onCreateLobby() {
+
+  // }
+  // onJoin(){
+
+  // }
+  // lobbyId ="";
 }
