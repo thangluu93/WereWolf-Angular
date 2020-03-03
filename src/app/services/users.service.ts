@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import {  AngularFireAuth} from '@angular/fire/auth'
-import { auth} from 'firebase'
+import { auth} from 'firebase';
+import {SocketioService} from './socketIo/socket-io.service'
 @Injectable({
   providedIn: 'root'
 })
@@ -18,6 +19,7 @@ export class UsersService {
   constructor(
     public db:AngularFirestore,
     public afAuth:AngularFireAuth,
+    public socketIo:SocketioService
 
   ) { }
 
@@ -49,7 +51,9 @@ export class UsersService {
     this.db.collection('users').doc(this.uid).set(this.user);
   }
 
-
+  sendUserData(){
+    this.socketIo.sendData("users",this.uid);
+  }
 }
 
 interface User{

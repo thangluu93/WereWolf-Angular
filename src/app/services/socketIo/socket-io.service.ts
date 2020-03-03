@@ -14,33 +14,31 @@ export class SocketioService {
 
   // data;
 
-  constructor() {
-  }
+  constructor() {}
   setupSocketConnection() {
     this.socket = io(environment.SOCKET_ENDPOINT, function (socket) {
 
     });
   }
 
-  public sendData(data) {
-    this.socket.emit("send", data);
+  public sendData(roomId, data) {
+    this.socket.emit(roomId, data);
   }
 
 
-  public getData = () => {
+  public getData(roomId):Observable<any>{
     return Observable.create(observer => {
-      this.socket.on("my broadcast", data => {
+      this.socket.on(roomId, data => {
+        console.log(data);
         observer.next(data);
-        // console.log(data);
-
       });
     });
   };
 
-  public setUpRecover() {
+  public setUpRecover(roomId) {
     this.socket.on('reconnect', (socket) => {
       {
-          socket.on("roomRecover", data => {
+          socket.on(roomId, data => {
           this.recoverMess.next(data)
         });
       }

@@ -21,8 +21,8 @@ export class ChatBoxComponent implements OnInit {
 
   sendMessage() {
     if (this.newMessage != undefined) {
-      console.log(this.newMessage + "does it run");
-      this.SocketioService.sendData({
+
+      this.SocketioService.sendData("global-chat",{
         name: this.UsersService.user.name,
         message: this.newMessage
       });
@@ -32,9 +32,9 @@ export class ChatBoxComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.SocketioService.setUpRecover();
+    this.SocketioService.setUpRecover("global-chat");
 
-    this.SocketioService.getData().subscribe(data => {
+    this.SocketioService.getData("global-chat").subscribe(data => {
       // if (this.messageListsRocover.length != 0) {
       //   this.SocketioService.recoverMess.unsubscribe()
       // }
