@@ -73,7 +73,7 @@ export class LogInDialogComponent implements OnInit {
 
   async loginwithGG(){
     await this.user.loginWithGoogle().then(() =>{
-      this.Router.navigate(['game-play'])
+      this.Router.navigate(['game-play']);
     })
   }
 }

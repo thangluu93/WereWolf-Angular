@@ -12,8 +12,8 @@
         <h1>Welcome To Werewolf Online</h1>
         <p>Please read the instruction before you play.</p>
         <p>Press play when you ready.</p>
-        <button  (click)="onCreateLobby()">Create Lobby</button>
-        <input type="text" style="text-align: center;" placeholder="Room Id">
-        <button (click)="onJoin()" >Join</button>
+        <button (click)="Router.navigate(['playing'])" >Create Lobby</button>
+        <button (click)="openDialog()">Join</button>
+
     </div>
 </div>
