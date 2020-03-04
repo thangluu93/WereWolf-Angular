@@ -36,6 +36,7 @@ export class GamePlayComponent implements OnInit {
       userId:this.afAuth.auth.currentUser.uid,
     });
   }
+  
   lobbyId ="";
   // onCreateLobby() {
 
