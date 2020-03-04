@@ -13,8 +13,8 @@
 
         <span class="spacer"></span>
         <button class="ContactButton" mat-button> <a href="/#footer"> Contact</a></button>
-        <button class="InstructionButton" mat-button (click)="openDialog()"> <a href="">Instruction</a></button>
-        <img *ngIf="userService.user" [src]="userService.user.photoURL" style="height: 50px; border-radius: 50%;">
+        <button class="InstructionButton" mat-button (click)="openDialog()"> Instruction</button>
+        <img *ngIf="userService.user" [src]="userService.user.photoURL">
         <a href="/#inputLogin"><i class="material-icons">account_circle</i></a>
 
     </mat-toolbar-row>
