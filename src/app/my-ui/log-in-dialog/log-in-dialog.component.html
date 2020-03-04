@@ -1,8 +1,8 @@
 <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
-<mat-tab-group mat-align-tabs="center" >
+<mat-tab-group mat-align-tabs="center">
     <!-- Log In -->
 
-    <mat-tab label="Log In" >
+    <mat-tab label="Log In">
         <form class="example-form" style="height: 350px;">
             <!-- Input Email -->
             <mat-form-field class="example-full-width">
@@ -47,8 +47,8 @@
                 <mat-error *ngIf="retypePassword.invalid ">{{getRetypePasswordError()}}</mat-error>
             </mat-form-field>
             <!--Sign Up Button -->
-            <div class="example-button-row" style="text-align: center;" >
-            <button mat-raised-button color="primary" *ngIf="isSignUp" (click)="signUp()"> Sign Up</button>
+            <div class="example-button-row" style="text-align: center;">
+                <button mat-raised-button color="primary" *ngIf="isSignUp" (click)="signUp()"> Sign Up</button>
             </div>
         </form>
     </mat-tab>

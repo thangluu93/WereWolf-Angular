@@ -1,12 +1,14 @@
 .iconhomepage {
     width: 50px;
+    max-width: 45px;
     height: 50px;
-    transition: 0.5s;
+    max-height: 45px;
 }
 
 .iconChange {
     width: 40px;
     height: 40px;
+    max-height: 50px;
     transition: 0.5s;
 }
 
@@ -79,7 +81,8 @@ a:hover {
 .spacer {
     flex: 1 1 auto;
 }
-.material-icons{
+
+.material-icons {
     text-align: center;
     width: 50px;
 }
