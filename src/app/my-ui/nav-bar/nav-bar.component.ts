@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { InstructionComponent } from '../instruction/instruction.component';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,7 +10,7 @@ import { InstructionComponent } from '../instruction/instruction.component';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog,public userService:UsersService) {
     window.onscroll = function() {
     myFunction();
   };

@@ -1,6 +1,7 @@
 .playBox{
     width: 650px;
     height: 350px;
+
     margin-top: 20px;
     background-color: #1F1F1F;
     display: flex;
@@ -10,10 +11,12 @@
     text-align: center;
     font-family: 'Oxanium', ;
 }
-h1{
+
+h1 {
     font-family: 'Trade Winds', ;
 }
-.Header{
+
+.Header {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -21,7 +24,8 @@ h1{
     text-align: center;
     font-family: 'Trade Winds', ;
 }
-.welcomePage{
+
+.welcomePage {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -35,7 +39,8 @@ h1{
     background-image: url("http://images-eds.xboxlive.com/image?url=z951ykn43p4FqWbbFvR2Ec.8vbDhj8G2Xe7JngaTToCmRGxSzf8J4zt6ifvNWlovSX_YCMWU9mV1NBXrX3IYexni6BCA6UYz4mRdGIj15OT8PUyFLaA0QnRd_ykYiizHgpyMNrT.74pTWrHw1IqMShh2y2PzYfBJHHiX3EiHYB32LL36lM2fZ2wOU5O.kf6u");
     background-size: cover;
 }
-button{
+
+button {
     height: 80px;
     width: 250px;
     font-family: 'Oxanium', ;
@@ -44,16 +49,18 @@ button{
     font-size: 25px;
     margin-top: 10px;
 }
-button:hover{
+
+button:hover {
     opacity: 0.6;
     transition: 1.5s;
     color: white;
     font-family: 'Oxanium', ;
 }
-input{
+
+input {
     margin-top: 10px;
     width: 250px;
     height: 30px;
     font-family: 'Oxanium', ;
-    font-size: 20px ;
+    font-size: 20px;
 }
