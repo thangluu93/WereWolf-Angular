@@ -23,6 +23,7 @@ import { ChatBoxComponent } from './chat-box/chat-box.component';
 import { PlayingFielComponent } from './playing-fiel/playing-fiel.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
+import { RoomIdComponent } from './room-id/room-id.component';
 
 
 
@@ -30,7 +31,7 @@ import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
-  declarations: [NavBarComponent, LogInDialogComponent, FooterComponent, InstructionComponent, ChatBoxComponent, PlayingFielComponent],
+  declarations: [NavBarComponent, LogInDialogComponent, FooterComponent, InstructionComponent, ChatBoxComponent, PlayingFielComponent, RoomIdComponent],
   imports: [
     CommonModule,
     MatFormFieldModule, 

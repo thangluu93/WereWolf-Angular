@@ -13,7 +13,6 @@
         <p>Please read the instruction before you play.</p>
         <p>Press play when you ready.</p>
         <button (click)="Router.navigate(['playing'])" >Create Lobby</button>
-        <input type="text" style="text-align: center;" placeholder="Room Id">
-        <button (click)="Router.navigate(['playing'])" >Join</button>
+        <button (click)="openDialog()">Join</button>
     </div>
 </div>
