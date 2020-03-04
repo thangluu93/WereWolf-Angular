@@ -1,58 +1,59 @@
-    .example-container {
-        width: 200px;
-        margin: 10px;
-        border: 1px solid #555;
-        width: 100%;
-        border-left: 2px solid #020202;
-        border-right: 2px solid #020202;
-        border-bottom: 2px solid #020202;
-        height: 100%;
-    }
-    
-    .chatboxtitle {
-        border: 1px solid #555;
-        border-left: 2px solid #020202;
-        border-right: 2px solid #020202;
-        border-bottom: 2px solid #020202;
-        border-top: 2px solid #020202;
-        margin-top: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-bottom: 2px;
-    }
-    
-    .messcontent {
-        width: 90%;
-        height: 80%;
-        border-left: 2px solid #020202;
-        border-right: 2px solid #020202;
-        border-bottom: 2px solid #020202;
-        border-top: 2px solid #020202;
-        margin-left: 10px;
-    }
-    
-    .game-play {
-        background-image: url(../../../assets/leafless-tree-border-made-bush-brunches.jpg);
-        width: 80%;
-        height: 200%;
-        z-index: 1;
-    }
-    
-    #new-game {
-        text-align: center;
-        left: 50%;
-        top: 50%;
-        color: red;
-    }
-    
-    .button-game-play {
-        flex-direction: column;
-        margin-top: 30%;
-        margin-left: 0%;
-    }
-    
-    #new-game-button {
-        width: 200px;
-        height: 200px;
-        font-size: 25px;
-    }
+.playBox{
+    width: 700px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oxanium', ;
+}
+h1{
+    font-family: 'Trade Winds', ;
+}
+.Header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trade Winds', ;
+}
+.welcomePage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    color: white;
+    background-color: lightslategrey;
+    width: 100%;
+    height: 100%;
+    font-family: 'Oxanium', ;
+    background-image: url("http://images-eds.xboxlive.com/image?url=z951ykn43p4FqWbbFvR2Ec.8vbDhj8G2Xe7JngaTToCmRGxSzf8J4zt6ifvNWlovSX_YCMWU9mV1NBXrX3IYexni6BCA6UYz4mRdGIj15OT8PUyFLaA0QnRd_ykYiizHgpyMNrT.74pTWrHw1IqMShh2y2PzYfBJHHiX3EiHYB32LL36lM2fZ2wOU5O.kf6u");
+    background-size: cover;
+}
+button{
+    height: 80px;
+    width: 250px;
+    font-family: 'Oxanium', ;
+    background-color: blueviolet;
+    border: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+button:hover{
+    opacity: 0.6;
+    transition: 1.5s;
+    color: white;
+    font-family: 'Oxanium', ;
+}
+input{
+    margin-top: 10px;
+    width: 250px;
+    height: 30px;
+    font-family: 'Oxanium', ;
+    font-size: 20px ;
+}

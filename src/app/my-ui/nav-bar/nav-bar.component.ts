@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { InstructionComponent } from '../instruction/instruction.component';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,7 +10,7 @@ import { InstructionComponent } from '../instruction/instruction.component';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog,public userService:UsersService) {
     window.onscroll = function() {
     myFunction();
   };
@@ -17,11 +18,11 @@ export class NavBarComponent implements OnInit {
   function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("container").className = "navbarChange mat-toolbar mat-toolbar-multiple-rows ";
-        document.getElementById("icon").className = "iconChange ";
+        document.getElementById("iconhomepage").className = "iconChange ";
         document.getElementById("title").className = "titleChange ";
     } else {
         document.getElementById("container").className = "nav-bar mat-toolbar mat-toolbar-multiple-rows";
-        document.getElementById("icon").className = "icon ";
+        document.getElementById("iconhomepage").className = "iconhomepage ";
         document.getElementById("title").className = "title "; 
     }
   } 

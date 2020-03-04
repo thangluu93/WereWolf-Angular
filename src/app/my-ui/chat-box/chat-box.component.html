@@ -1,0 +1,89 @@
+<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+<div class="fullcreen1">
+    <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened style="background-color: blanchedalmond;width: 20%;">
+            <div class="messcontent">
+                <div *ngIf="_RecoverMessagesFlag">
+                    <div id="outputArea" *ngFor="let messageList of messageListsRocover">
+                        {{messageList.name}} : {{messageList.message}}
+                    </div>
+                </div>
+                <div id="outputArea" *ngFor="let messageList of messageLists">
+                    {{messageList.name}} : {{messageList.message}}
+                </div>
+            </div>
+            <div class="inputform">
+                <input id="lobbyChatInput" autocomplete="off" maxlength="280" placeholder="Input massage" [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()">
+                <div class="iconsend">
+                    <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="sendMessage()">
+                        <mat-icon style="color: blue;">send</mat-icon> 
+                    </button>
+                </div>
+            </div>
+            <div class="Exit">
+                <button (click)="Router.navigate(['game-play'])">Back to Lobby </button>
+            </div>
+        </mat-drawer>
+
+        <mat-drawer-content class="playingField">
+            <div style="height: 100%; width: 100%;overflow: hidden;">
+                <div class="Top">
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                </div>
+                <div class="Middle">
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                </div>
+                <div class="Bottom">
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                    <mat-card class="Player">
+                        <mat-card-header class="playerContent">
+                            <div mat-card-avatar class="avatarPlayer"></div>
+                            <mat-card-title>Shiba Inu</mat-card-title>
+                        </mat-card-header>
+                    </mat-card>
+                </div>
+            </div>
+
+        </mat-drawer-content>
+
+    </mat-drawer-container>
+</div>

@@ -1,0 +1,110 @@
+.example-container {
+    width: 100%;
+    height: 100%;
+}
+
+.messcontent {
+    width: 98%;
+    height: 80%;
+    border-left: 2px solid #020202;
+    border-right: 2px solid #020202;
+    border-bottom: 2px solid #020202;
+    border-top: 2px solid #020202;
+    font-family: 'Oxanium', ;
+}
+
+.inputform {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-family: 'Oxanium', ;
+}
+
+#lobbyChatInput {
+    width: 85%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.fullcreen1 {
+    width: 100%;
+    height: 100%;
+}
+
+.playingField {
+    background-image: url("http://seasonchristmas.com/images/christmas/christmas-282.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Player {
+    width: 12%;
+    height: 60%;
+}
+
+.avatarPlayer {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.Top {
+    margin-right: 1%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 34%;
+}
+
+.Middle {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 34%;
+}
+
+.Bottom {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 34%;
+}
+
+.Exit {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-family: 'Oxanium', ;
+    margin-top: 10px;
+    width: auto;
+    height: 50px;
+}
+
+button {
+    font-family: 'Oxanium', ;
+    font-size: 20px;
+}
+
+input {
+    font-family: 'Oxanium', ;
+}
+
+.playerContent {
+    display: flex;
+    flex-direction: column;
+}

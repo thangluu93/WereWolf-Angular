@@ -1,6 +1,24 @@
-div {
+#login{
+    // background-image: url("http://images-eds.xboxlive.com/image?url=z951ykn43p4FqWbbFvR2Ec.8vbDhj8G2Xe7JngaTToCmRGxSzf8J4zt6ifvNWlovSX_YCMWU9mV1NBXrX3IYexni6BCA6UYz4mRdGIj15OT8PUyFLaA0QnRd_ykYiizHgpyMNrT.74pTWrHw1IqMShh2y2PzYfBJHHiX3EiHYB32LL36lM2fZ2wOU5O.kf6u");
+    // background-size: cover;
+    // background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+#Head{
+    background-image: url("http://images-eds.xboxlive.com/image?url=z951ykn43p4FqWbbFvR2Ec.8vbDhj8G2Xe7JngaTToCmRGxSzf8J4zt6ifvNWlovSX_YCMWU9mV1NBXrX3IYexni6BCA6UYz4mRdGIj15OT8PUyFLaA0QnRd_ykYiizHgpyMNrT.74pTWrHw1IqMShh2y2PzYfBJHHiX3EiHYB32LL36lM2fZ2wOU5O.kf6u");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#inputLogin{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

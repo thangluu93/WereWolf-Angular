@@ -1,17 +1,19 @@
-<link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
 <mat-toolbar class="nav-bar " id="container">
     <mat-toolbar-row>
-        <a href="#"><img class="icon" id="icon" src="../../../assets/WereWolfIcon.webp"></a>
-        <span id="title" class="title">WEREWOLF</span>
-        <span class="spacer"></span>
+        <a href="#">
+            <img id="iconhomepage" src="../../../assets/WereWolfIcon.webp">
+        </a>
+        <a href="#">
+            <span id="title" class="title"> WEREWOLF</span>
+        </a>
 
-        <button class="ConstactButton" mat-button> <a href="/#footer"> Contact</a></button>
-        <button class="InstructionButton" mat-button (click)="openDialog()">Instruction</button>
-        <button class="AccountButton" mat-raised-button> <a href="/#login"> ACCOUNT</a></button>
-        <button class="AvatarButton" mat-button> <button class="Inside" mat-button > Avatar </button> </button>
+        <span class="spacer"></span>
+        <button class="ContactButton" mat-button> <a href="/#footer"> Contact</a></button>
+        <button class="InstructionButton" mat-button (click)="openDialog()"> Instruction</button>
+        <img *ngIf="userService.user" [src]="userService.user.photoURL">
+        <a href="/#inputLogin"><i class="material-icons">account_circle</i></a>
 
     </mat-toolbar-row>
 </mat-toolbar>
-
-<!-- delete script -->

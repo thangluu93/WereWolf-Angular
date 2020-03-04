@@ -2,6 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { UsersService } from 'src/app/services/users.service';
+import { AngularFireAuth} from '@angular/fire/auth'
+import { AngularFirestore } from '@angular/fire/firestore';
+import {auth} from 'firebase';
+// import { Observable } from 'rxjs'
+// import { AngularFireDatabase } from '@angular/fire/database'
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -10,9 +16,15 @@ import { Router } from '@angular/router';
 })
 export class LogInDialogComponent implements OnInit {
 
-  constructor(public snackBar: MatSnackBar, public Router: Router) { }
+  constructor(public snackBar: MatSnackBar, public Router: Router,
+    public db:AngularFirestore,
+    public afAuth:AngularFireAuth,
+    public user:UsersService,
+    ) { 
+    }
 
   isSignUp = true;
+  isLogIn = true;
 
   email = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required, Validators.minLength(8)]);
@@ -28,10 +40,11 @@ export class LogInDialogComponent implements OnInit {
             '';
   }
 
-  getPasswordError() {
-    return this.password.hasError('required') ? 'You must enter a password' :
-        this.password.hasError('minLength') ? 'You password must have 8 characters' :
-          '';
+  getPasswordError(){
+  
+    return this.password.hasError('required')?"You must enter your password":
+      this.password.hasError('minLength')?"Your password must have at least 8 character":'';
+      
   }
 
   getRetypePasswordError() {
@@ -41,10 +54,27 @@ export class LogInDialogComponent implements OnInit {
   }
 
   signUp() {
+    if (this.email.value == 0) {
+      this.snackBar.open('Please Input Infomation','OK', {duration: 2000});
+    }
     if (this.password.value !== this.retypePassword.value) {
       this.snackBar.open('Retyped password does not match!!', 'OK', {duration: 2000});
       return;
     }
+  }
+  LogIn(){
+    this.afAuth.auth.signInWithEmailAndPassword(this.email.value,this.password.value).then(() => {
+      this.snackBar.open('Success' , 'OK', {duration : 2000});
+    }).catch((err) => {
+      this.snackBar.open(err, 'OK',{duration: 2000});
+    });
+  }
+
+
+  async loginwithGG(){
+    await this.user.loginWithGoogle().then(() =>{
+      this.Router.navigate(['game-play'])
+    })
   }
 }
 
