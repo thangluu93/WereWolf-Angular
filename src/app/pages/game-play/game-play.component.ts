@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { SocketioService } from 'src/app/services/socketIo/socket-io.service';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import Events from '../../events';
+
 import { AngularFireAuth } from '@angular/fire/auth';
 import { GameService } from 'src/app/services/game.service';
 //dialog Join
@@ -45,15 +45,8 @@ export class GamePlayComponent implements OnInit {
     let id = await this.socket.getData("lobby.id").toPromise();
     console.log(id);
   }
-  onJoin(){
-    this.socket.sendData("global",{
-      event:Events.repliedJoinLobby,
-      roomId:this.lobbyId,
-      userId:this.afAuth.auth.currentUser.uid,
-    });
-  }
-  
-  lobbyId ="";
+
+
   // onCreateLobby() {
 
   // }

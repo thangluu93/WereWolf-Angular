@@ -17,6 +17,7 @@ export class UsersService {
     photoURL: '',
   }
 
+   isLogin=false;
 
   uid: string = "";
   constructor(
@@ -43,6 +44,7 @@ export class UsersService {
         if (!this.checkUser(u.user.uid)) {
           this.addUser();
         }
+        this.isLogin=true;
       })
     })
   }

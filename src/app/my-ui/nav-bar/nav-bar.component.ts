@@ -15,6 +15,8 @@ export class NavBarComponent implements OnInit {
     myFunction();
   };
 
+  let isLogin=false;
+
   function myFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("container").className = "navbarChange mat-toolbar mat-toolbar-multiple-rows ";
