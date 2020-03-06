@@ -3,7 +3,7 @@
     <mat-drawer-container class="example-container">
         <mat-drawer mode="side" opened style="background-color: blanchedalmond;width: 20%;">
             <div class="roomID">
-                <button>RoomID</button>
+                <button mat-button>RoomID</button>
                 31553
             </div>
             <div class="messcontent">
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="Exit">
-                <button (click)="Router.navigate(['game-play'])">Back to Lobby </button>
+                <button mat-button (click)="Router.navigate(['game-play'])">Back to Lobby </button>
             </div>
         </mat-drawer>
 
